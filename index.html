@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Atharva - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- TOP MENU BAR -->
+    <div class="top-bar">
+        <div class="menu">
+            <div>
+                <image src="assets/icon/vs-code-svg.svg" class="vs-code-logo" />
+            </div>
+            <span>File</span>
+            <span>Edit</span>
+            <span>Selection</span>
+            <span>View</span>
+            <span>Go</span>
+            <span>Run</span>
+            <span>Terminal</span>
+            <span>Help</span>
+        </div>
+        <div class="search-box">
+            <image src="assets/icon/icons8-search.svg" class="search-icon" />
+            <span>Personal Portfolio</span>
+        </div>
+        <div class="layout-icons">
+
+        </div>
+        <!-- <div class="search-box">🔍 portfolio</div> -->
+    </div>
+
+    <div class="main">
+        <!-- ACTIVITY BAR -->
+        <div class="activity-bar">
+            <div class="files-div">
+                <image src="assets/icon/file-svg.svg" class="file-icon" />
+            </div>
+            <div>
+                <image src="assets/icon/search-activity-icon.svg" />
+            </div>
+            <div>
+                <image src="assets/icon/icons8-code-fork-48.png" class="git-icon"/>
+            </div>
+            <div class="setting-icon">
+                <image src="assets/icon/settings-icon.svg" class="settings-icon"/>
+            </div>
+        </div>
+
+        <!-- EXPLORER -->
+        <div class="explorer">
+            <h4>EXPLORER</h4>
+            <p onclick="openFile('about')">about.py</p>
+            <p onclick="openFile('projects')">projects.py</p>
+            <p onclick="openFile('contact')">contact.py</p>
+        </div>
+
+        <!-- EDITOR AREA -->
+        <div class="editor">
+
+            <div class="tabs">
+                <span id="tab-title">about.py</span>
+            </div>
+
+            <div class="code" id="editor-content"></div>
+
+        </div>
+    </div>
+
+    <!-- STATUS BAR -->
+    <div class="status-bar">
+        <span>development/portfolio</span>
+        <span>Ln 1, Col 1</span>
+        <span>UTF-8</span>
+        <span>HTML</span>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
