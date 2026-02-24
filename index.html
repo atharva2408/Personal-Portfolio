@@ -2,8 +2,10 @@
 <html>
 
 <head>
-    <title>Atharva - Portfolio</title>
+    <title>Atharva Yanna</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="icon-style.css">
+    <link rel="icon" type="image/svg+xml" href="/assets/icon/vs-code-svg.svg" />
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
 </head>
 
@@ -26,12 +28,11 @@
         </div>
         <div class="search-box">
             <image src="assets/icon/icons8-search.svg" class="search-icon" />
-            <span>Personal Portfolio</span>
+            <span>VS Code Portfolio</span>
         </div>
         <div class="layout-icons">
 
         </div>
-        <!-- <div class="search-box">🔍 portfolio</div> -->
     </div>
 
     <div class="main">
@@ -44,19 +45,39 @@
                 <image src="assets/icon/search-activity-icon.svg" />
             </div>
             <div>
-                <image src="assets/icon/icons8-code-fork-48.png" class="git-icon"/>
+                <image src="assets/icon/icons8-code-fork-48.png" class="git-icon" />
             </div>
             <div class="setting-icon">
-                <image src="assets/icon/settings-icon.svg" class="settings-icon"/>
+                <image src="assets/icon/settings-icon.svg" class="settings-icon" />
             </div>
         </div>
 
         <!-- EXPLORER -->
         <div class="explorer">
-            <h4>EXPLORER</h4>
-            <p onclick="openFile('about')">about.py</p>
-            <p onclick="openFile('projects')">projects.py</p>
-            <p onclick="openFile('contact')">contact.py</p>
+            <div class="explorer-title">
+                <span>EXPLORER</span>
+                <image src="assets/icon/options-svgrepo-com.svg" class="explorer-options-icon" />
+            </div>
+            <div class="files-container">
+                <div class="files-title">
+                    <image src="assets/icon/Dropdown icon.svg" />
+                    Personal Portfolio
+                </div>
+                <div class="files">
+                    <div class="file">
+                        <image src="assets/icon/markdown-svgrepo-com.svg" class="md-file-icon" />
+                        About.md
+                    </div>
+                    <div class="file">
+                        <image src="assets/icon/markdown-svgrepo-com.svg" class="md-file-icon" />
+                        Projects.md
+                    </div>
+                    <div class="file">
+                        <image src="assets/icon/markdown-svgrepo-com.svg" class="md-file-icon" />
+                        Contact.md
+                    </div>
+                </div>
+            </div>
         </div>
 
         <!-- EDITOR AREA -->
@@ -73,6 +94,9 @@
 
     <!-- STATUS BAR -->
     <div class="status-bar">
+        <div class="bottom-arrows">
+            <image src="assets/icon/Bottom-2arows.svg" class="bottom-arrows-icon" />
+        </div>
         <span>development/portfolio</span>
         <span>Ln 1, Col 1</span>
         <span>UTF-8</span>

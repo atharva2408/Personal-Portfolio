@@ -7,33 +7,6 @@ body {
     letter-spacing: -0.04rem;
 }
 
-/* logo */
-.vs-code-logo {
-    width: 0.9rem;
-    height: 0.9rem;
-    background-color: #1F1F1F;
-}
-
-.search-icon {
-    width: 0.9rem;
-    height: 0.9rem;
-}
-
-.file-icon {
-    /* width: 2rem; */
-    height: 2.5rem;
-}
-
-.git-icon {
-    width: 2rem;
-    height: 2rem;
-}
-
-.settings-icon{
-    /* justify-self: flex-end; */
-    width: 1.8rem;
-}
-
 /* TOP BAR */
 .top-bar {
     height: 2rem;
@@ -75,7 +48,7 @@ body {
 /* MAIN LAYOUT */
 .main {
     display: flex;
-    height: calc(100vh - 3.7rem);
+    height: calc(100vh - 3.35rem);
 }
 
 /* ACTIVITY BAR */
@@ -106,13 +79,46 @@ body {
 
 /* EXPLORER */
 .explorer {
-    width: 220px;
+    width: 13.5rem;
     background: #181818;
 }
 
-.explorer h4 {
-    color: #888;
-    font-size: 12px;
+.explorer-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #CCCCCC;
+    font-size: 0.75rem;
+    padding: 0.8rem 1.2rem;
+}
+
+.files-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.files-title{
+    display: flex;
+    align-items: center;
+    font-size: 0.875rem;
+    font-weight: 700;
+    gap:0.2rem;
+    padding: 0.3rem;
+    padding-bottom: 0;
+
+}
+
+.files{
+    display: flex;
+    flex-direction: column;
+    gap:0.6rem;
+    padding: 0.6rem 1rem;
+}
+
+.file{
+    display: flex;
+    gap: 0.3rem;
+    align-items: center;
 }
 
 .explorer p {
@@ -143,11 +149,19 @@ body {
 
 /* STATUS BAR */
 .status-bar {
-    height: 1rem;
+    height: 1.3rem;
     background: #007acc;
     color: white;
     display: flex;
     justify-content: space-between;
-    padding: 5px 15px;
     font-size: 12px;
+}
+
+.bottom-arrows{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2e8461;
+    width: 2.3rem;
+    height: 100%;
 }
