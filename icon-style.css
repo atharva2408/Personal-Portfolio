@@ -25,8 +25,8 @@
 }
 
 .explorer-options-icon{
-    width: 0.8rem;
-    height: 0.8rem;
+    width: 0.65rem;
+    height: 0.65rem;
 }
 
 .md-file-icon{
@@ -35,6 +35,11 @@
 }
 
 .bottom-arrows-icon{
+    width: 1rem;
+    height: 1rem;
+}
+
+.play-icon{
     width: 1rem;
     height: 1rem;
 }
