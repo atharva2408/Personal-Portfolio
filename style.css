@@ -388,25 +388,93 @@ body {
     color: #ffffff;
 }
 
+/* Contact Layout */
+.contact-container {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-name {
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-bottom: 0.4rem;
+}
+
+.contact-tagline {
+    color: #9cdcfe;
+    margin:0;
+}
+
+/* Links container */
+.links {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+/* Badge style */
+.badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.6rem 1.3rem;
+    border: 1px solid #3a3a3a;
+    border-radius: 40px;
+    text-decoration: none;
+    color: #e6e6e6;
+    font-size: 0.9rem;
+    transition: all 0.2s ease;
+}
+
+/* Hover effect */
+.badge:hover {
+    border-color: #007acc;
+    background-color: rgba(0, 122, 204, 0.08);
+    transform: translateY(-2px);
+}
 
 
 /* STATUS BAR */
 .status-bar {
     height: 1.3rem;
-    background: #007acc;
+    background: #181818;
     color: white;
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     font-size: 12px;
+    border-top: 1px solid #2b2b2b;
 }
 
 .bottom-arrows {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #2e8461;
+    /* background-color: #2e8461; */
     width: 2.3rem;
     height: 100%;
+}
+
+.status-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 1rem;
+    width: 100%;
+}
+
+.status-left, .status-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:0.8rem;
+}
+
+.status-left div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:0.1rem;
 }
 
 
