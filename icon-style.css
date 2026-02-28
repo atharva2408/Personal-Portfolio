@@ -3,6 +3,7 @@
     width: 0.9rem;
     height: 0.9rem;
     background-color: #1F1F1F;
+    cursor: pointer;
 }
 
 .search-icon {

@@ -112,14 +112,19 @@ body {
 .files {
     display: flex;
     flex-direction: column;
-    gap: 0.6rem;
-    padding: 0.6rem 1rem;
+    padding: 0.1rem 0rem;
 }
 
 .file {
     display: flex;
     align-items: center;
     gap: 0.3rem;
+    padding: 0.4rem 1rem;
+}
+
+.file:hover{
+    background-color: #2b2b2b;
+    cursor: pointer;
 }
 
 /* ================= EDITOR ================= */
@@ -135,10 +140,12 @@ body {
     display: flex;
     align-items: center;
     background: #181818;
-    border-bottom: 2px solid #2b2b2b;
+    border-bottom: 1px solid #2b2b2b;
 
     overflow-x: auto;
     white-space: nowrap;
+        position: relative;
+
 }
 
 .tabs::-webkit-scrollbar {
@@ -156,6 +163,22 @@ body {
     gap: 0.5rem;
     padding: 0.65rem 1.5rem 0.65rem 0.8rem;
     border-right: 1px solid #2b2b2b;
+        position: relative;
+
+}
+
+.tab:hover{
+    background-color: #1e1e1e;
+    cursor: pointer;
+}
+
+.file.active-file {
+    background-color: #2b2b2b;
+}
+
+.tab.active-tab {
+    background-color: #1e1e1e;
+    border-top: 1px solid #007acc; 
 }
 
 .editor-btn-icons {
@@ -459,9 +482,18 @@ body {
     gap: 0.2rem;
 }
 
-.contact{
+#contact{
     margin-bottom: 3rem;
 }
+
+.section {
+    transition: opacity 1s ease;
+}
+
+.section.hidden {
+    display: none;
+}
+
 
 
 /* ================= MOBILE VIEW ================= */
