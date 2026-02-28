@@ -3,6 +3,7 @@
     width: 0.9rem;
     height: 0.9rem;
     background-color: #1F1F1F;
+    cursor: pointer;
 }
 
 .search-icon {
@@ -47,4 +48,14 @@
 .status-git-icon{
     width: 0.9rem;
     height: 0.9rem;
+}
+
+.status-cancel-icon{
+    width: 0.85rem;
+    height: 0.85rem;
+}
+
+.status-warning-icon{
+    width: 0.8rem;
+    height: 0.8rem;
 }
