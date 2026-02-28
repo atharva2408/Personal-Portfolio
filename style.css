@@ -515,11 +515,6 @@ body {
         left: 0%;
     }
 
-    /* Full width editor */
-    .main {
-        height: calc(100vh - 3.3rem);
-    }
-
     .editor {
         width: 100%;
     }
