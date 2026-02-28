@@ -587,12 +587,6 @@ body {
         border-radius: 0;
     }
 
-    .markdown-container h1 {
-        font-size: 0.875rem;
-        font-weight: 600;
-        margin: 0;
-    }
-
     .markdown-container h2 {
         font-size: 0.75rem;
         font-weight: 600;
