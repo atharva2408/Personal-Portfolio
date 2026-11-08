@@ -65,3 +65,43 @@ tabs.forEach(tab => {
 vscodeLogo.addEventListener("click", () => {
     showAllSections();
 });
+
+// --------- ACCESSIBILITY: files and tabs work from the keyboard ----------
+[...files, ...tabs].forEach(el => {
+    el.setAttribute("tabindex", "0");
+    el.setAttribute("role", "button");
+    el.addEventListener("keydown", (e) => {
+        if (e.key === "Enter" || e.key === " ") {
+            e.preventDefault();
+            openSection(el.getAttribute("data-file"));
+        }
+    });
+});
+
+vscodeLogo.setAttribute("tabindex", "0");
+vscodeLogo.setAttribute("role", "button");
+vscodeLogo.addEventListener("keydown", (e) => {
+    if (e.key === "Enter" || e.key === " ") {
+        e.preventDefault();
+        showAllSections();
+    }
+});
+
+// --------- DEEP LINK: vscode/#experience opens that file ----------
+function openFromHash() {
+    const name = decodeURIComponent(location.hash.replace("#", ""));
+    if (name && document.getElementById(name)) {
+        openSection(name);
+    }
+}
+window.addEventListener("hashchange", openFromHash);
+openFromHash();
+
+// keep the URL hash in sync so a view can be shared
+document.querySelectorAll(".file, .tab").forEach(el => {
+    el.addEventListener("click", () => {
+        if (history.replaceState) {
+            history.replaceState(null, "", "#" + el.getAttribute("data-file"));
+        }
+    });
+});

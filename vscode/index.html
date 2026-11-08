@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Atharva Yanna · VS Code view</title>
+    <meta name="description" content="Atharva Yanna's portfolio in a VS Code-style view: software engineer building agentic AI workflows, fast APIs and React interfaces.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#181818">
+    <link rel="canonical" href="https://atharva2408.github.io/Personal-Portfolio/vscode/">
+    <link rel="icon" type="image/svg+xml" href="../assets/icon/vs-code-svg.svg" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="icon-style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- TOP MENU BAR -->
+    <div class="top-bar">
+        <div class="menu">
+            <div>
+                <img src="../assets/icon/vs-code-svg.svg" class="vs-code-logo" alt="VS Code logo: show all files" title="Show all files" />
+            </div>
+            <span>File</span>
+            <span>Edit</span>
+            <span>Selection</span>
+            <span>View</span>
+            <span>Go</span>
+            <span>Run</span>
+            <span>Terminal</span>
+            <span>Help</span>
+        </div>
+        <div class="search-box">
+            <img src="../assets/icon/icons8-search.svg" class="search-icon" alt="" />
+            <span>Atharva Yanna — Portfolio</span>
+        </div>
+        <a class="back-link" href="../" aria-label="Back to the main portfolio">&larr; <span>Back to portfolio</span></a>
+    </div>
+
+    <div class="main">
+        <!-- ACTIVITY BAR -->
+        <div class="activity-bar">
+            <div class="files-div" style="padding-left: 0.25rem;">
+                <img src="../assets/icon/file-svg.svg" class="file-icon" alt="Explorer" />
+            </div>
+            <div>
+                <img src="../assets/icon/search-activity-icon.svg" alt="Search" />
+            </div>
+            <div>
+                <img src="../assets/icon/icons8-code-fork-48.png" class="git-icon" alt="Source control" />
+            </div>
+            <div class="setting-icon">
+                <img src="../assets/icon/settings-icon.svg" class="settings-icon" alt="Settings" />
+            </div>
+        </div>
+
+        <!-- EXPLORER -->
+        <div class="explorer">
+            <div class="explorer-title">
+                <span>EXPLORER</span>
+                <img src="../assets/icon/options-svgrepo-com.svg" class="explorer-options-icon" alt="" />
+            </div>
+            <div class="files-container">
+                <div class="files-title">
+                    <img src="../assets/icon/Dropdown icon.svg" alt="" />
+                    Personal Portfolio
+                </div>
+                <div class="files">
+                    <div class="file" data-file="about">
+                        <img src="../assets/icon/markdown-svgrepo-com.svg" class="md-file-icon" alt="" />
+                        About.md
+                    </div>
+                    <div class="file" data-file="experience">
+                        <img src="../assets/icon/markdown-svgrepo-com.svg" class="md-file-icon" alt="" />
+                        Experience.md
+                    </div>
+                    <div class="file" data-file="projects">
+                        <img src="../assets/icon/markdown-svgrepo-com.svg" class="md-file-icon" alt="" />
+                        Projects.md
+                    </div>
+                    <div class="file" data-file="skills">
+                        <img src="../assets/icon/markdown-svgrepo-com.svg" class="md-file-icon" alt="" />
+                        Skills.md
+                    </div>
+                    <div class="file" data-file="education">
+                        <img src="../assets/icon/markdown-svgrepo-com.svg" class="md-file-icon" alt="" />
+                        Education.md
+                    </div>
+                    <div class="file" data-file="research">
+                        <img src="../assets/icon/markdown-svgrepo-com.svg" class="md-file-icon" alt="" />
+                        Research.md
+                    </div>
+                    <div class="file" data-file="contact">
+                        <img src="../assets/icon/markdown-svgrepo-com.svg" class="md-file-icon" alt="" />
+                        Contact.md
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- EDITOR AREA -->
+        <div class="editor">
+            <div class="tabs">
+                <div class="tab" data-file="about">
+                    <img src="../assets/icon/markdown-svgrepo-com.svg" alt="" />
+                    <span>About.md</span>
+                </div>
+                <div class="tab" data-file="experience">
+                    <img src="../assets/icon/markdown-svgrepo-com.svg" alt="" />
+                    <span>Experience.md</span>
+                </div>
+                <div class="tab" data-file="projects">
+                    <img src="../assets/icon/markdown-svgrepo-com.svg" alt="" />
+                    <span>Projects.md</span>
+                </div>
+                <div class="tab" data-file="skills">
+                    <img src="../assets/icon/markdown-svgrepo-com.svg" alt="" />
+                    <span>Skills.md</span>
+                </div>
+                <div class="tab" data-file="education">
+                    <img src="../assets/icon/markdown-svgrepo-com.svg" alt="" />
+                    <span>Education.md</span>
+                </div>
+                <div class="tab" data-file="research">
+                    <img src="../assets/icon/markdown-svgrepo-com.svg" alt="" />
+                    <span>Research.md</span>
+                </div>
+                <div class="tab" data-file="contact">
+                    <img src="../assets/icon/markdown-svgrepo-com.svg" alt="" />
+                    <span>Contact.md</span>
+                </div>
+                <div class="editor-btn-icons">
+                    <img src="../assets/icon/play-svgrepo-com.svg" class="play-icon" alt="" />
+                    <img src="../assets/icon/git-diff-svgrepo-com.svg" class="play-icon" alt="" />
+                    <img src="../assets/icon/options-svgrepo-com.svg" class="explorer-options-icon" alt="" />
+                </div>
+            </div>
+
+            <div class="content-container">
+                <div class="content">
+
+                    <!-- ABOUT -->
+                    <div class="markdown-container section" id="about">
+                        <h1>📖 About</h1>
+                        <hr />
+                        <p>
+                            Software engineer at Emergys Solutions, working across the full stack: agentic LLM
+                            workflows in Python, fast APIs and SQL underneath, React on top. Computer Science
+                            graduate with Honours in Data Science.
+                        </p>
+                        <p>
+                            I like systems where the data, the API and the interface are designed together.
+                            Think twice, code once.
+                        </p>
+                        <p>
+                            <strong>Next:</strong> seeking an MS in Computer Science to gain advanced knowledge in
+                            ML, DL and agentic AI, and to build AI-powered solutions that are egalitarian,
+                            accessible and transparent.
+                        </p>
+                    </div>
+
+                    <!-- EXPERIENCE -->
+                    <div class="markdown-container section" id="experience">
+                        <h1>👨‍💻 Experience</h1>
+                        <hr />
+
+                        <h2 class="company">
+                            Emergys Solutions Pvt. Ltd.
+                            <span class="date">(Aug 2024 – Present)</span>
+                        </h2>
+                        <h3 class="role">Associate Consultant</h3>
+
+                        <div class="impact-row">
+                            <div><strong>Minutes → seconds</strong><span>response times after tuning REST APIs, SQL and stored procedures</span></div>
+                            <div><strong>~50%</strong><span>application performance improvement</span></div>
+                        </div>
+
+                        <ul>
+                            <li>Built a <strong>FastAPI</strong> backend and a <strong>LangGraph</strong> agentic workflow: intent classification, schema and data retrieval, SQL generation, query revision and model-agnostic LLM selection.</li>
+                            <li>Created database-interaction and connection-pool pipelines for natural-language querying and visualisation of relational data.</li>
+                            <li>Led UI development of the <strong>Should Costing</strong> module (React.js, Redux, Node.js, Express.js, MSSQL): modular components, What-If SKU-to-model mapping and interactive cost dashboards.</li>
+                            <li>Built a Should Costing module and supplier portal for the chemical industry, with web search for supplier discovery, automated data extraction and LLM-based enrichment through prompt engineering.</li>
+                        </ul>
+
+                        <div class="section-divider"></div>
+
+                        <h2 class="company">
+                            Mandrake Tech Pvt Ltd
+                            <span class="date">(Aug 2023 – Oct 2023)</span>
+                        </h2>
+                        <h3 class="role">Software Development Intern</h3>
+                        <ul>
+                            <li>Built a mock Gmail API server in Rust with RESTful endpoints that simulate Gmail operations.</li>
+                            <li>Implemented the Google OAuth 2.0 flow: authorisation, token exchange and authenticated API access.</li>
+                            <li>Applied Rust ownership, borrowing, error handling and modular design, using GitFlow.</li>
+                        </ul>
+
+                        <div class="section-divider"></div>
+
+                        <h2 class="company">
+                            Persistent Systems
+                            <span class="date">(July 2023 – Aug 2023)</span>
+                        </h2>
+                        <h3 class="role">Martian Intern</h3>
+                        <ul>
+                            <li>Intensive training in Linux, RDBMS and Core Java.</li>
+                            <li>Linux administration (users, processes, file permissions) and SQL: DDL, DML, DCL, TCL.</li>
+                            <li>Core Java: OOP, data structures and exception handling.</li>
+                        </ul>
+
+                        <div class="section-divider"></div>
+
+                        <h2 class="company">
+                            Intel
+                            <span class="date">(May 2023 – July 2023)</span>
+                        </h2>
+                        <h3 class="role">Intel Unnati Summer Intern</h3>
+                        <ul>
+                            <li>Built a social-distancing detection system with YOLOv5 and distance estimation from camera resolution, focal length and pixel distance.</li>
+                            <li>Designed and optimised a real-time pipeline that flags violations in live video.</li>
+                            <li>Hands-on with computer vision, object detection, OpenCV and model optimisation.</li>
+                        </ul>
+                    </div>
+
+                    <!-- PROJECTS -->
+                    <div class="markdown-container section" id="projects">
+                        <h1>🧪 Projects</h1>
+                        <hr />
+
+                        <h2 class="project-title">Agentic natural-language data assistant <span class="project-kind">Built at Emergys</span></h2>
+                        <ul>
+                            <li>LangGraph workflow that turns a plain-English question into a checked SQL query, runs it and charts the result.</li>
+                            <li>FastAPI backend with intent classification, schema retrieval, SQL generation, query revision and LLM-agnostic model selection.</li>
+                            <li>Connection-pool pipelines and a visualisation layer for relational data.</li>
+                        </ul>
+
+                        <div class="section-divider"></div>
+
+                        <h2 class="project-title">Should Costing module &amp; supplier portal <span class="project-kind">Built at Emergys</span></h2>
+                        <ul>
+                            <li>Led the UI for cost analysis in the Global Trade Optimizer using React.js, Redux, Node.js, Express.js and MSSQL.</li>
+                            <li>Built the What-If SKU-to-model mapping and interactive cost dashboards.</li>
+                            <li>Supplier portal for the chemical industry: web-search supplier discovery with LLM enrichment.</li>
+                        </ul>
+
+                        <div class="section-divider"></div>
+
+                        <h2 class="project-title">Smart Workout Companion <span class="project-kind">Final-year project · research paper</span></h2>
+                        <ul>
+                            <li>Real-time yoga pose detection and repetition counting, with yoga and meditation modules.</li>
+                            <li>OpenCV and MediaPipe for live video pose tracking; deep learning for posture refinement.</li>
+                            <li>Flask backend connected to a React front end for exercise monitoring and streaming.</li>
+                        </ul>
+
+                        <div class="section-divider"></div>
+
+                        <h2 class="project-title">Electri-wise <span class="project-kind">Personal project</span></h2>
+                        <ul>
+                            <li>Role-based electricity meter management system built with React and Node.js.</li>
+                            <li>Separate Admin and User dashboards with controlled access; users manage multiple meters and analyse usage quarterly and yearly.</li>
+                            <li>Redux for state management; REST APIs for secure data retrieval and analytics.</li>
+                        </ul>
+
+                        <div class="section-divider"></div>
+
+                        <h2 class="project-title">Mock Gmail API server <span class="project-kind">Internship project</span></h2>
+                        <ul>
+                            <li>Rust server with RESTful endpoints that simulate Gmail operations for backend development and testing.</li>
+                            <li>Google OAuth 2.0 authorisation, token exchange and authenticated API access.</li>
+                        </ul>
+
+                        <div class="section-divider"></div>
+
+                        <h2 class="project-title">Expense Tracker <span class="project-kind">Personal project</span></h2>
+                        <ul>
+                            <li>Command-line app for recording, retrieving and deleting transactions, written in Rust.</li>
+                            <li>JSON serialisation for persistence, modular architecture and unit tests.</li>
+                        </ul>
+
+                        <p style="margin-top:1.5rem">More on <a href="https://github.com/atharva2408" target="_blank" rel="noopener" style="color: var(--accent-text)">github.com/atharva2408</a></p>
+                    </div>
+
+                    <!-- SKILLS -->
+                    <div class="markdown-container section" id="skills">
+                        <h1>🛠 Skills</h1>
+                        <hr />
+
+                        <div class="skills-grid">
+                            <div class="skill-card">
+                                <h2>Programming Languages</h2>
+                                <div class="skill-tags">
+                                    <span class="skill-tag strong">Python</span>
+                                    <span class="skill-tag strong">TypeScript</span>
+                                    <span class="skill-tag strong">JavaScript</span>
+                                    <span class="skill-tag strong">Rust</span>
+                                    <span class="skill-tag">Java</span>
+                                    <span class="skill-tag">C++</span>
+                                    <span class="skill-tag">C</span>
+                                    <span class="skill-tag">SQL</span>
+                                </div>
+                            </div>
+
+                            <div class="skill-card">
+                                <h2>Web &amp; APIs</h2>
+                                <div class="skill-tags">
+                                    <span class="skill-tag strong">React.js</span>
+                                    <span class="skill-tag strong">Node.js</span>
+                                    <span class="skill-tag strong">Express.js</span>
+                                    <span class="skill-tag strong">FastAPI</span>
+                                    <span class="skill-tag">Flask</span>
+                                    <span class="skill-tag">Redux</span>
+                                    <span class="skill-tag">HTML</span>
+                                    <span class="skill-tag">CSS</span>
+                                    <span class="skill-tag">REST APIs</span>
+                                    <span class="skill-tag">OAuth 2.0</span>
+                                </div>
+                            </div>
+
+                            <div class="skill-card">
+                                <h2>AI &amp; Machine Learning</h2>
+                                <div class="skill-tags">
+                                    <span class="skill-tag strong">LangGraph</span>
+                                    <span class="skill-tag strong">LLM integration</span>
+                                    <span class="skill-tag">Prompt engineering</span>
+                                    <span class="skill-tag">Deep learning</span>
+                                    <span class="skill-tag">YOLOv5</span>
+                                    <span class="skill-tag">OpenCV</span>
+                                    <span class="skill-tag">MediaPipe</span>
+                                    <span class="skill-tag">Scikit-learn</span>
+                                </div>
+                            </div>
+
+                            <div class="skill-card">
+                                <h2>Data &amp; Databases</h2>
+                                <div class="skill-tags">
+                                    <span class="skill-tag strong">MSSQL</span>
+                                    <span class="skill-tag">MongoDB</span>
+                                    <span class="skill-tag">Stored procedures</span>
+                                    <span class="skill-tag">Pandas</span>
+                                    <span class="skill-tag">NumPy</span>
+                                    <span class="skill-tag">Matplotlib</span>
+                                </div>
+                            </div>
+
+                            <div class="skill-card">
+                                <h2>Cloud (certified)</h2>
+                                <div class="skill-tags">
+                                    <span class="skill-tag">Azure AI Fundamentals</span>
+                                    <span class="skill-tag">AWS Cloud Architecting</span>
+                                    <span class="skill-tag">AWS Cloud Foundations</span>
+                                </div>
+                            </div>
+
+                            <div class="skill-card">
+                                <h2>Version Control &amp; Tools</h2>
+                                <div class="skill-tags">
+                                    <span class="skill-tag">Git</span>
+                                    <span class="skill-tag">GitFlow</span>
+                                    <span class="skill-tag">Linux</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- EDUCATION -->
+                    <div class="markdown-container section" id="education">
+                        <h1>🎓 Education</h1>
+                        <hr />
+
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content">
+                                    <div class="timeline-title">
+                                        <h2>Marathwada Mitra Mandal's College of Engineering, Pune (SPPU)</h2>
+                                        <span class="timeline-date">2020 – 2024</span>
+                                    </div>
+                                    <p><strong>Bachelor's in Computer Science Engineering with Honours in Data Science</strong></p>
+                                    <p>CGPA: <strong>8.84</strong></p>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item">
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content">
+                                    <div class="timeline-title">
+                                        <h2>S.P. College</h2>
+                                        <span class="timeline-date">2020</span>
+                                    </div>
+                                    <p><strong>Higher Secondary Certificate · Maharashtra State Board</strong></p>
+                                    <p>Percentage: <strong>84%</strong></p>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item">
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content">
+                                    <div class="timeline-title">
+                                        <h2>Vishwakarma Vidyalaya English Secondary</h2>
+                                        <span class="timeline-date">2018</span>
+                                    </div>
+                                    <p><strong>Secondary School Certificate · Maharashtra State Board</strong></p>
+                                    <p>Percentage: <strong>94%</strong></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- RESEARCH -->
+                    <div class="markdown-container section" id="research">
+                        <h1>🔬 Research &amp; Recognition</h1>
+                        <hr />
+
+                        <h2 class="project-title">Research</h2>
+                        <ul class="md-list">
+                            <li>Smart Workout Companion / PoseCraft Fitness Navigator<small>AI-based posture monitoring and yoga pose refinement using MediaPipe and deep learning</small></li>
+                            <li>The Effect of Fake Reviews on e-Commerce<small>Fake review detection · Jun – Nov 2023</small></li>
+                        </ul>
+
+                        <div class="section-divider"></div>
+
+                        <h2 class="project-title">Achievements</h2>
+                        <ul class="md-list">
+                            <li>Presented a peer-reviewed research paper at ICRTACT 2024<small>International Conference on Recent Trends &amp; Advancements in Computing Technologies</small></li>
+                            <li>2nd rank, Project Based Learning Competition<small>Issued by MMCOE</small></li>
+                        </ul>
+
+                        <div class="section-divider"></div>
+
+                        <h2 class="project-title">Certifications</h2>
+                        <ul class="md-list">
+                            <li>Microsoft Azure AI Fundamentals</li>
+                            <li>AWS Academy Graduate – Cloud Architecting</li>
+                            <li>AWS Academy Graduate – Cloud Foundations</li>
+                        </ul>
+
+                        <div class="section-divider"></div>
+
+                        <h2 class="project-title">Teams &amp; communities</h2>
+                        <ul class="md-list">
+                            <li>AI/ML Engineer, Team Code, MMCOE<small>Jun 2023 – Jan 2024</small></li>
+                            <li>Marketing Team Member, Google Developer Students Club, MMCOE<small>Jun 2022 – Jun 2023</small></li>
+                            <li>Technical Team Member, Robocon Rudra, MMCOE<small>Feb 2021 – Mar 2022</small></li>
+                            <li>Student Member, ISACA<small>Oct 2022 – Oct 2023</small></li>
+                            <li>Member, Association of Computer Engineers<small>Jun 2022 – Apr 2023</small></li>
+                            <li>Member, Rotaract Club of Pune City Fortune<small>Jun 2021 – Oct 2022</small></li>
+                        </ul>
+                    </div>
+
+                    <!-- CONTACT -->
+                    <div class="markdown-container section" id="contact">
+                        <h1>📩 Contact</h1>
+                        <hr />
+
+                        <div class="contact-container">
+                            <h2 class="contact-name">Atharva Yanna</h2>
+                            <p class="contact-tagline">Think twice, code once.</p>
+
+                            <div class="links">
+                                <a href="mailto:atharvay24@gmail.com" class="badge">✉ Email</a>
+                                <a href="https://github.com/atharva2408" target="_blank" rel="noopener" class="badge">GitHub</a>
+                                <a href="https://www.linkedin.com/in/atharvayanna/" target="_blank" rel="noopener" class="badge">LinkedIn</a>
+                                <a href="../" class="badge">← Main portfolio</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- STATUS BAR -->
+    <div class="status-bar">
+        <div class="bottom-arrows">
+            <img src="../assets/icon/Bottom-2arows.svg" class="bottom-arrows-icon" alt="" />
+        </div>
+        <div class="status-container">
+            <div class="status-left">
+                <div class="status-branch">
+                    <img src="../assets/icon/git-icon.svg" class="status-git-icon" alt="" />
+                    <span>main</span>
+                </div>
+                <div>
+                    <img src="../assets/icon/cancel-icon.svg" class="status-cancel-icon" alt="" />
+                    <span>0</span>
+                </div>
+                <div>
+                    <img src="../assets/icon/warning-light-grey.svg" class="status-warning-icon" alt="" />
+                    <span>0</span>
+                </div>
+            </div>
+            <div class="status-right">
+                <span>Ln 1, Col 1</span>
+                <span>UTF-8</span>
+                <span>Markdown</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,2 +1,26 @@
-# Personal-Portfolio
-This is my personal portfolio
+# Personal Portfolio
+
+Portfolio of **Atharva Yanna**: software engineer building agentic AI workflows, fast APIs and React interfaces.
+
+Plain HTML, CSS and JavaScript. No build step, no dependencies. Deployed to GitHub Pages by `.github/workflows/static.yml` (pushes to `main`).
+
+## Structure
+
+| Path | What it is |
+| --- | --- |
+| `index.html`, `css/main.css`, `js/main.js` | The main editorial portfolio (cream / ink / burnt orange) |
+| `vscode/` | The original VS Code-themed view, updated. Linked from the hero button |
+| `assets/Atharva_Yanna_Resume.pdf` | Resume used by every "Download Resume" button. Replace with your original PDF at the same path |
+| `assets/img/atharva.jpg` | Hero photo (4:5 portrait, about 800×1000). Until it exists the hero shows an "AY" monogram |
+| `assets/img/thumbs/` | Abstract SVG project illustrations |
+
+## Run locally
+
+```bash
+python3 -m http.server 8000
+# open http://localhost:8000
+```
+
+## Palette
+
+Cream `#F3EEE3` · Ink `#111111` · Burnt Orange `#D9541E`

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" role="img" aria-label="Abstract diagram of an agentic workflow: intent, schema, SQL, revise">
+<rect width="640" height="400" fill="#161616"/>
+<g font-family="Inter Tight, Arial, sans-serif" font-size="18" font-weight="600" text-anchor="middle">
+<g fill="none" stroke="#F3EEE3" stroke-opacity=".55" stroke-width="2">
+<rect x="28" y="150" width="104" height="64" rx="8"/>
+<rect x="188" y="150" width="104" height="64" rx="8"/>
+<rect x="348" y="150" width="104" height="64" rx="8" stroke="#D9541E" stroke-opacity="1"/>
+<rect x="508" y="150" width="104" height="64" rx="8"/>
+<path d="M132 182h56M292 182h56M452 182h56"/>
+</g>
+<g fill="#F3EEE3" stroke="none">
+<path d="M186 182l-9-5v10zM346 182l-9-5v10zM506 182l-9-5v10z"/>
+<text x="80" y="188">Intent</text><text x="240" y="188">Schema</text><text x="400" y="188" fill="#D9541E">SQL</text><text x="560" y="188">Revise</text>
+</g>
+<path d="M560 150C560 88 400 88 400 148" fill="none" stroke="#D9541E" stroke-width="2.5" stroke-dasharray="6 6"/>
+<path d="M400 150l-6-10h12z" fill="#D9541E"/>
+<g fill="#F3EEE3" fill-opacity=".14"><rect x="28" y="270" width="584" height="26" rx="4"/><rect x="28" y="306" width="584" height="26" rx="4"/><rect x="28" y="342" width="584" height="26" rx="4"/></g>
+<g fill="#F3EEE3" fill-opacity=".5"><rect x="42" y="279" width="90" height="8" rx="2"/><rect x="42" y="315" width="70" height="8" rx="2"/><rect x="42" y="351" width="110" height="8" rx="2"/></g>
+<g fill="#D9541E"><rect x="470" y="279" width="130" height="8" rx="2"/></g>
+<g fill="#F3EEE3" fill-opacity=".3"><rect x="500" y="315" width="100" height="8" rx="2"/><rect x="520" y="351" width="80" height="8" rx="2"/></g>
+<g fill="#F3EEE3" fill-opacity=".4"><rect x="28" y="40" width="190" height="10" rx="2"/><rect x="28" y="62" width="130" height="10" rx="2"/></g>
+</g>
+</svg>
