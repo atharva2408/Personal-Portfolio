@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" role="img" aria-label="Abstract chat bubbles">
+<rect width="640" height="400" fill="#161616"/>
+<rect x="60" y="70" width="320" height="76" rx="14" fill="#F3EEE3" fill-opacity=".16"/>
+<g fill="#F3EEE3" fill-opacity=".6"><rect x="84" y="96" width="220" height="9" rx="2"/><rect x="84" y="116" width="150" height="9" rx="2"/></g>
+<rect x="260" y="176" width="320" height="112" rx="14" fill="#D9541E"/>
+<g fill="#111" fill-opacity=".75"><rect x="284" y="202" width="250" height="9" rx="2"/><rect x="284" y="222" width="220" height="9" rx="2"/><rect x="284" y="242" width="140" height="9" rx="2"/></g>
+<g fill="#F3EEE3" fill-opacity=".4"><circle cx="90" cy="330" r="6"/><circle cx="112" cy="330" r="6"/><circle cx="134" cy="330" r="6"/></g>
+</svg>
