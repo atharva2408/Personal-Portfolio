@@ -103,15 +103,14 @@
       <div class="wrap">
         <div class="hero__grid">
           <div class="hero__text">
-            <p class="hero__status" data-reveal><span class="dot" aria-hidden="true"></span>Associate Consultant at Emergys Solutions</p>
 
             <h1 class="hero__name" id="hero-title" aria-label="Atharva Yanna">
               <span class="line" aria-hidden="true"><span>Atharva</span></span>
-              <span class="line" aria-hidden="true"><span style="--d:110ms">Yanna<span class="dotmark">.</span></span></span>
+              <span class="line" aria-hidden="true"><span style="--d:110ms">Yanna<span class="dotmark"></span></span></span>
             </h1>
 
             <p class="hero__lead" data-reveal style="--d:200ms">Software engineer building AI-powered products and the interfaces behind them.</p>
-            <p class="hero__intro" data-reveal style="--d:260ms">I work across agentic LLM workflows, fast APIs and React. Computer Science graduate with Honours in Data Science.</p>
+            <p class="hero__intro" data-reveal style="--d:260ms">Computer Science graduate with Honours in Data Science.</p>
 
             <div class="hero__actions" data-reveal style="--d:320ms">
               <a class="btn btn--primary" href="#projects">View My Work <svg class="ic ic-out" aria-hidden="true"><use href="#i-out"/></svg></a>
@@ -128,10 +127,12 @@
             <div class="photo__frame tilt" data-tilt>
               <div class="photo__block" aria-hidden="true"></div>
               <div class="photo__img">
-                <div class="photo__mono" aria-hidden="true">A<i>Y</i></div>
-                <img src="assets/img/atharva.jpg" alt="Portrait of Atharva Yanna" width="402" height="520" decoding="async" fetchpriority="high" onerror="this.remove()">
+                <div class="photo__mono" aria-hidden="true">AY<i>.</i></div>
+                
+                <!-- <img src="assets/img/atharva.jpg" alt="Portrait of Atharva Yanna" width="402" height="520" decoding="async" fetchpriority="high" onerror="this.remove()"> -->
               </div>
               <figcaption class="photo__cap">Atharva Yanna<span>Software engineer</span></figcaption>
+              <span class="photo__side" aria-hidden="true">AI · Full-stack · Data</span>
             </div>
           </figure>
         </div>
@@ -144,9 +145,9 @@
         <div class="about">
           <figure class="photo" data-reveal>
             <div class="photo__frame tilt" data-tilt>
-              <div class="photo__block" aria-hidden="true"></div>
+              <div class="photo__block__about" aria-hidden="true"></div>
               <div class="photo__img">
-                <img src="assets/img/atharva.jpg" alt="Atharva Yanna, smiling, in a navy shirt" width="402" height="520" loading="lazy" decoding="async" onerror="this.remove()">
+                <img src="assets/img/about_me.jpg" alt="Atharva Yanna, smiling, in a navy shirt" width="402" height="520" loading="lazy" decoding="async" onerror="this.remove()">
               </div>
               <span class="chip chip--a">Full-stack engineering</span>
               <span class="chip chip--b">LLMs &amp; agentic AI</span>
@@ -187,7 +188,6 @@
       <div class="wrap">
         <div class="sec-head">
           <h2 id="exp-title" data-reveal>Experience</h2>
-          <p data-reveal style="--d:100ms">One full-time role and three internships, from Linux and Java basics to production AI workflows.</p>
         </div>
 
         <div class="timeline" id="timeline">
@@ -199,14 +199,10 @@
             </div>
             <div>
               <p class="xp__role">Associate Consultant</p>
-              <div class="impact">
-                <div><strong>Minutes → seconds</strong><span>API and SQL response times</span></div>
-                <div><strong>~50%</strong><span>better application performance</span></div>
-              </div>
               <ul class="xp__list">
                 <li><strong>EMY AI.</strong> Built the FastAPI backend and a LangGraph agentic workflow that lets people query relational databases in natural language: intent classification, schema and data retrieval, SQL generation and revision, with model-agnostic LLM selection and a database connection pool.</li>
                 <li><strong>Global Trade Optimizer.</strong> Led UI development of the Should Costing module in React.js and Redux: modular components, What-If SKU-to-model mapping and interactive cost dashboards.</li>
-                <li><strong>Performance.</strong> Optimised REST APIs, complex SQL and stored procedures. Common Table Expressions and indexing took queries over large HS-code datasets from minutes to seconds.</li>
+                <li>Optimised REST APIs, complex SQL and stored procedures. Common Table Expressions and indexing took queries over large HS-code datasets from minutes to seconds.</li>
                 <li><strong>Pennakem.</strong> Built a should-costing module and an LLM-assisted supplier portal for the chemical industry: web search finds suppliers, data is extracted automatically and language models fill in missing details.</li>
               </ul>
               <ul class="xp__stack" aria-label="Technologies">
@@ -259,7 +255,6 @@
       <div class="wrap">
         <div class="sec-head">
           <h2 id="proj-title" data-reveal>Selected projects</h2>
-          <p data-reveal style="--d:100ms">Work projects first, then research, hackathons and personal builds. Filter by area.</p>
         </div>
 
         <div class="filters" id="filters" role="group" aria-label="Filter projects" data-reveal>
@@ -408,69 +403,6 @@
           <a class="textlink" href="https://github.com/atharva2408" target="_blank" rel="noopener">github.com/atharva2408 <svg class="ic" aria-hidden="true"><use href="#i-out"/></svg></a>
         </p>
 
-        <!-- EMY AI explorer -->
-        <div class="lab" id="lab" data-reveal>
-          <div class="lab__intro">
-            <h3>Under the hood: how EMY AI answers a question</h3>
-            <p>Click through the workflow I built at Emergys. A simplified, illustrative example, not real company data.</p>
-          </div>
-          <div class="steps" role="tablist" aria-label="EMY AI workflow steps" aria-orientation="vertical">
-            <button role="tab" id="t1" aria-controls="p1" aria-selected="true" type="button"><span class="n">1</span>Intent check</button>
-            <button role="tab" id="t2" aria-controls="p2" aria-selected="false" tabindex="-1" type="button"><span class="n">2</span>Schema retrieval</button>
-            <button role="tab" id="t3" aria-controls="p3" aria-selected="false" tabindex="-1" type="button"><span class="n">3</span>Query generation</button>
-            <button role="tab" id="t4" aria-controls="p4" aria-selected="false" tabindex="-1" type="button"><span class="n">4</span>Query revision</button>
-            <button role="tab" id="t5" aria-controls="p5" aria-selected="false" tabindex="-1" type="button"><span class="n">5</span>Data retrieval</button>
-            <button role="tab" id="t6" aria-controls="p6" aria-selected="false" tabindex="-1" type="button"><span class="n">6</span>Visualisation</button>
-          </div>
-          <div class="panels">
-            <div class="panel show" role="tabpanel" id="p1" aria-labelledby="t1">
-              <h4>Is this a question the database can answer?</h4>
-              <p>An intent classifier checks relevance before anything expensive runs, so off-topic questions never reach the model or the database.</p>
-              <pre><b>question:</b> "Which suppliers cost us the most this quarter?"
-<b>intent:</b>   database_question
-<b>relevant:</b> true</pre>
-            </div>
-            <div class="panel" role="tabpanel" id="p2" aria-labelledby="t2" hidden>
-              <h4>Find the tables and columns that matter</h4>
-              <p>Schema retrieval gives the model only the parts of the database it needs, which is how it keeps hold of the database’s context.</p>
-              <pre><b>tables:</b>  suppliers, purchase_orders
-<b>columns:</b> suppliers.name, purchase_orders.line_total,
-         purchase_orders.order_date</pre>
-            </div>
-            <div class="panel" role="tabpanel" id="p3" aria-labelledby="t3" hidden>
-              <h4>Write the SQL, with whichever model fits</h4>
-              <p>The architecture is model-agnostic: the LLM that writes the query can be chosen or swapped without changing the workflow.</p>
-              <pre><b>SELECT</b> s.name, <b>SUM</b>(o.line_total) <b>AS</b> spend
-<b>FROM</b> purchase_orders o <b>JOIN</b> suppliers s <b>ON</b> s.id = o.supplier_id
-<b>WHERE</b> o.order_date &gt;= :quarter_start
-<b>GROUP BY</b> s.name <b>ORDER BY</b> spend <b>DESC</b>;</pre>
-            </div>
-            <div class="panel" role="tabpanel" id="p4" aria-labelledby="t4" hidden>
-              <h4>Check it, and fix it if it fails</h4>
-              <p>If a generated query does not run or does not match the schema, it goes back to the model with the error to be revised.</p>
-              <pre><b>error:</b> column "amount" does not exist
-<b>revise:</b> use purchase_orders.line_total
-<b>status:</b> query valid</pre>
-            </div>
-            <div class="panel" role="tabpanel" id="p5" aria-labelledby="t5" hidden>
-              <h4>Run it through a connection pool</h4>
-              <p>A database pool manages connections so many people can ask questions reliably, without opening a new connection every time.</p>
-              <pre><b>pool:</b> connection acquired
-<b>rows:</b> 10 returned
-<b>pool:</b> connection released</pre>
-            </div>
-            <div class="panel" role="tabpanel" id="p6" aria-labelledby="t6" hidden>
-              <h4>Show the answer, not just rows</h4>
-              <p>The result is turned into a visualisation chosen from the question, so the answer reads at a glance.</p>
-              <div class="bars" aria-label="Example bar chart of spend by supplier">
-                <div>Supplier A<i style="--w:100%"></i></div>
-                <div>Supplier B<i style="--w:74%"></i></div>
-                <div>Supplier C<i style="--w:52%"></i></div>
-                <div>Supplier D<i style="--w:31%"></i></div>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
 
@@ -479,7 +411,6 @@
       <div class="wrap">
         <div class="sec-head">
           <h2 id="skills-title" data-reveal>Skills</h2>
-          <p data-reveal style="--d:100ms">Grouped by the part of the system they belong to.</p>
         </div>
         <div class="skills" data-stagger>
           <div class="skill" tabindex="0"><h3>Languages</h3><p><span class="k">Python</span><span>TypeScript</span><span class="k">JavaScript</span><span>Java</span><span>Rust</span><span>C++</span><span>C</span><span class="k">SQL</span></p></div>
@@ -488,9 +419,8 @@
           <div class="skill" tabindex="0"><h3>AI &amp; machine learning</h3><p><span class="k">LangGraph</span><span class="k">LLM integration</span><span class="k">Prompt engineering</span><span>Deep learning</span><span>Transfer learning</span><span>YOLOv5</span><span>OpenCV</span><span>MediaPipe</span><span>Hugging Face</span><span>Scikit-learn</span></p></div>
           <div class="skill" tabindex="0"><h3>Data &amp; databases</h3><p><span class="k">MSSQL</span><span>MongoDB</span><span>Stored procedures</span><span>Query optimisation</span><span>Pandas</span><span>NumPy</span><span>Matplotlib</span></p></div>
           <div class="skill" tabindex="0"><h3>Cloud (certified)</h3><p><span>Azure AI Fundamentals</span><span>AWS Cloud Architecting</span><span>AWS Cloud Foundations</span></p></div>
-          <div class="skill" tabindex="0"><h3>Tools</h3><p><span>Git</span><span>GitFlow</span><span>Linux</span><span>Streamlit</span></p></div>
+          <div class="skill" tabindex="0"><h3>Tools</h3><p><span>Git</span><span>GitFlow</span><span>Linux</span><span>Streamlit</span><span>Docker</span><span>Redis</span><span>Celery</span></p></div>
         </div>
-        <p class="skills-note" data-reveal><b>Bold</b> marks what I use in my current role at Emergys.</p>
       </div>
     </section>
 

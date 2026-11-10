@@ -171,12 +171,18 @@ button { font: inherit; color: inherit; }
 .tilt.is-active { transition: transform .12s linear; }
 .photo__frame { position: relative; aspect-ratio: 4 / 5; }
 .photo__block { position: absolute; inset: 0; transform: translate(14px, 14px); background: var(--orange); transition: transform .6s var(--ease); }
+.photo__block__about { position: absolute; inset: 0; transform: translate(14px, 14px); background: var(--ink-2); transition: transform .6s var(--ease); }
 .photo__img { position: absolute; inset: 0; overflow: hidden; background: var(--cream-3); }
 .photo__img img { position: relative; z-index: 1; width: 100%; height: 100%; object-fit: cover; object-position: center 12%; }
 .photo__mono { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; font-size: 8rem; font-weight: 700; letter-spacing: -.06em; color: var(--cream); background: var(--ink); }
 .photo__mono i { color: var(--orange); font-style: normal; }
 .photo__cap { z-index: 3; position: absolute; left: -.9rem; bottom: 1.6rem; background: var(--cream); color: var(--ink); padding: .55rem .9rem; font-weight: 600; font-size: .9rem; letter-spacing: -.01em; box-shadow: 0 8px 24px rgba(17,17,17,.14); }
 .photo__cap span { display: block; font-weight: 500; font-size: .8rem; color: var(--ink-60); }
+.photo__side {
+  position: absolute; right: -2.4rem; top: 0; bottom: 0; z-index: 3; display: flex; align-items: center;
+  writing-mode: vertical-rl; transform: rotate(180deg);
+  font-size: .85rem; font-weight: 600; letter-spacing: .02em; color: var(--ink-60); white-space: nowrap;
+}
 @media (hover: hover) { .photo:hover .photo__block { transform: translate(20px, 20px); } }
 
 /* floating labels around the about photo */

@@ -1,7 +1,7 @@
 /* ============ THEME TOKENS (VS Code dark + portfolio accent) ============ */
 :root {
-    --accent: #D9541E;
-    --accent-text: #EE7A4B;
+    --accent: #007ACC;
+    --accent-text: #23A9F2;
     --cream: #F3EEE3;
 }
 
@@ -443,7 +443,7 @@ body {
 
 .badge:hover {
     border-color: var(--accent);
-    background-color: rgba(217, 84, 30, 0.12);
+    background-color: rgba(0, 112, 204, 0.12);
     transform: translateY(-2px);
 }
 
@@ -773,7 +773,13 @@ html { scroll-behavior: smooth; }
     .back-link { padding: 0.15rem 0.6rem; }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 1280px){
+    .editor {
+        width: calc(100vw - 250px);
+    }
+}
+
+@media screen and (max-width: 768px) {
     .back-link span { display: none; }
     .search-box span { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
     .tab { padding: 0.65rem 1rem 0.65rem 0.7rem; }
