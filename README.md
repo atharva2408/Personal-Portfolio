@@ -13,14 +13,6 @@ Plain HTML, CSS and JavaScript. No build step, no dependencies. Deployed to GitH
 | `assets/Atharva_Yanna_Resume.pdf` | Resume opened in a new tab by every "View Resume" button. Replace with your original PDF at the same path |
 | `assets/img/atharva.jpg` | Portrait used in the hero and About (4:5). If it is missing the hero shows an "AY" monogram |
 | `assets/img/thumbs/` | Abstract SVG project illustrations |
-
-## Run locally
-
-```bash
-python3 -m http.server 8000
-# open http://localhost:8000
-```
-
 ## Palette
 
 Cream `#F3EEE3` · Ink `#111111` · Burnt Orange `#D9541E`
