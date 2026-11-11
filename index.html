@@ -1,460 +1,532 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <title>Atharva Yanna</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="icon-style.css">
-    <link rel="icon" type="img/svg+xml" href="/assets/icon/vs-code-svg.svg" />
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Atharva Yanna — Software Engineer, AI &amp; Full-Stack</title>
+  <meta name="description" content="Atharva Yanna is a software engineer building agentic AI workflows, fast APIs and React interfaces. B.E. Computer Science (Honours in Data Science), working at Emergys Solutions.">
+  <meta name="author" content="Atharva Yanna">
+  <meta name="theme-color" content="#F3EEE3">
+  <link rel="canonical" href="https://atharva2408.github.io/Personal-Portfolio/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Atharva Yanna — Software Engineer, AI &amp; Full-Stack">
+  <meta property="og:description" content="Agentic AI workflows, fast APIs and React interfaces.">
+  <meta property="og:url" content="https://atharva2408.github.io/Personal-Portfolio/">
+  <meta property="og:image" content="https://atharva2408.github.io/Personal-Portfolio/assets/img/atharva.jpg">
+  <meta name="twitter:card" content="summary">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+
+  <script>
+    document.documentElement.classList.add('js');
+    setTimeout(function () { if (!window.__ready) document.documentElement.classList.add('reveal-all'); }, 3500);
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Atharva Yanna",
+    "jobTitle": "Software Engineer",
+    "email": "mailto:atharvay24@gmail.com",
+    "image": "https://atharva2408.github.io/Personal-Portfolio/assets/img/atharva.jpg",
+    "url": "https://atharva2408.github.io/Personal-Portfolio/",
+    "worksFor": { "@type": "Organization", "name": "Emergys Solutions Pvt. Ltd." },
+    "alumniOf": { "@type": "CollegeOrUniversity", "name": "Marathwada Mitra Mandal's College of Engineering, Pune" },
+    "sameAs": ["https://github.com/atharva2408", "https://www.linkedin.com/in/atharvayanna/"]
+  }
+  </script>
 </head>
 
 <body>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <defs>
+      <symbol id="i-out" viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></symbol>
+      <symbol id="i-doc" viewBox="0 0 24 24"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8zM14 3v5h5M9 13h6M9 17h6"/></symbol>
+      <symbol id="i-code" viewBox="0 0 24 24"><path d="m16 18 6-6-6-6M8 6l-6 6 6 6"/></symbol>
+      <symbol id="i-copy" viewBox="0 0 24 24"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V6a2 2 0 0 1 2-2h9"/></symbol>
+      <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></symbol>
+    </defs>
+  </svg>
 
-    <!-- TOP MENU BAR -->
-    <div class="top-bar">
-        <div class="menu">
-            <div>
-                <img src="assets/icon/vs-code-svg.svg" class="vs-code-logo" />
-            </div>
-            <span>File</span>
-            <span>Edit</span>
-            <span>Selection</span>
-            <span>View</span>
-            <span>Go</span>
-            <span>Run</span>
-            <span>Terminal</span>
-            <span>Help</span>
-        </div>
-        <div class="search-box">
-            <img src="assets/icon/icons8-search.svg" class="search-icon" />
-            <span>VS Code Portfolio</span>
-        </div>
-        <div class="layout-icons">
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="progress" aria-hidden="true"></div>
 
-        </div>
+  <!-- ===== NAV ===== -->
+  <header class="nav" id="nav">
+    <div class="wrap nav__inner">
+      <a class="nav__logo" href="#home" aria-label="Atharva Yanna — back to top">Atharva Yanna<i>.</i></a>
+      <nav class="nav__links" id="navLinks" aria-label="Primary">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <span class="nav__ind" aria-hidden="true"></span>
+      </nav>
+      <a class="btn btn--primary btn--sm nav__cta" href="assets/Atharva_Yanna_Resume.pdf" target="_blank" rel="noopener">View Resume</a>
+      <button class="nav__toggle" id="navToggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="menu"><span></span><span></span></button>
     </div>
+  </header>
 
-    <div class="main">
-        <!-- ACTIVITY BAR -->
-        <div class="activity-bar">
-            <div class="files-div" style="padding-left: 0.25rem;">
-                <img src="assets/icon/file-svg.svg" class="file-icon" />
+  <div class="menu" id="menu" aria-hidden="true" inert>
+    <nav aria-label="Mobile">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="menu__foot">
+      <a href="assets/Atharva_Yanna_Resume.pdf" target="_blank" rel="noopener">View resume</a>
+      <a href="vscode/">View in VS Code</a>
+      <a href="https://github.com/atharva2408" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.linkedin.com/in/atharvayanna/" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </div>
+
+  <main id="main">
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="wrap">
+        <div class="hero__grid">
+          <div class="hero__text">
+
+            <h1 class="hero__name" id="hero-title" aria-label="Atharva Yanna">
+              <span class="line" aria-hidden="true"><span>Atharva</span></span>
+              <span class="line" aria-hidden="true"><span style="--d:110ms">Yanna<span class="dotmark"></span></span></span>
+            </h1>
+
+            <p class="hero__lead" data-reveal style="--d:200ms">Software engineer building AI-powered products and the interfaces behind them.</p>
+            <p class="hero__intro" data-reveal style="--d:260ms">Computer Science graduate with Honours in Data Science.</p>
+
+            <div class="hero__actions" data-reveal style="--d:320ms">
+              <a class="btn btn--primary" href="#projects">View My Work <svg class="ic ic-out" aria-hidden="true"><use href="#i-out"/></svg></a>
+              <a class="btn btn--ghost" href="assets/Atharva_Yanna_Resume.pdf" target="_blank" rel="noopener">View Resume <svg class="ic" aria-hidden="true"><use href="#i-doc"/></svg></a>
+              <a class="btn btn--ghost" href="vscode/" id="vscodeBtn">View in VS Code <svg class="ic ic-code" aria-hidden="true"><use href="#i-code"/></svg></a>
+            </div>
+            <div class="hero__links" data-reveal style="--d:380ms">
+              <a class="textlink" href="https://github.com/atharva2408" target="_blank" rel="noopener">GitHub <svg class="ic" aria-hidden="true"><use href="#i-out"/></svg></a>
+              <a class="textlink" href="https://www.linkedin.com/in/atharvayanna/" target="_blank" rel="noopener">LinkedIn <svg class="ic" aria-hidden="true"><use href="#i-out"/></svg></a>
+            </div>
+          </div>
+
+          <figure class="photo" data-reveal style="--d:140ms">
+            <div class="photo__frame tilt" data-tilt>
+              <div class="photo__block" aria-hidden="true"></div>
+              <div class="photo__img">
+                <div class="photo__mono" aria-hidden="true">AY<i>.</i></div>
+                
+                <!-- <img src="assets/img/atharva.jpg" alt="Portrait of Atharva Yanna" width="402" height="520" decoding="async" fetchpriority="high" onerror="this.remove()"> -->
+              </div>
+              <figcaption class="photo__cap">Atharva Yanna<span>Software engineer</span></figcaption>
+              <span class="photo__side" aria-hidden="true">AI · Full-stack · Data</span>
+            </div>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section class="section tint" id="about" aria-labelledby="about-title">
+      <div class="wrap">
+        <div class="about">
+          <figure class="photo" data-reveal>
+            <div class="photo__frame tilt" data-tilt>
+              <div class="photo__block__about" aria-hidden="true"></div>
+              <div class="photo__img">
+                <img src="assets/img/about_me.jpg" alt="Atharva Yanna, smiling, in a navy shirt" width="402" height="520" loading="lazy" decoding="async" onerror="this.remove()">
+              </div>
+              <span class="chip chip--a">Full-stack engineering</span>
+              <span class="chip chip--b">LLMs &amp; agentic AI</span>
+              <span class="chip chip--c">Always learning</span>
+            </div>
+          </figure>
+
+          <div class="about__text">
+            <div class="sec-head"><h2 id="about-title" data-reveal>A little about me</h2></div>
+            <p data-reveal>I’m Atharva Yanna, a software engineer who enjoys turning complex problems into practical, scalable software.</p>
+            <p data-reveal>I’m an Associate Consultant at Emergys Solutions. I work across the full stack, building and improving production applications with <strong>React.js, Redux, Node.js, Express.js and SQL</strong>. That work has taught me to look past writing code: understand the problem first, design an efficient solution, then build something that makes a real difference.</p>
+            <p data-reveal>Beyond full-stack development I’m deeply interested in <strong>Artificial Intelligence, Machine Learning and Generative AI</strong>. I’ve explored them through intelligent workflows, LLM-powered applications, computer vision and data-driven systems, and I like experimenting with emerging technology to see what real problems it can solve.</p>
+            <p data-reveal>I believe good engineering is more than making things work. It’s making them reliable, efficient, maintainable and meaningful. Whether I’m building a backend service, tuning a database query or trying out an AI application, I enjoy the process of learning, building and improving.</p>
+            <p class="about__sign" data-reveal>Always curious. Always building. Always learning.</p>
+            <div class="explore" data-reveal>
+              <h3>Currently exploring</h3>
+              <ul>
+                <li>Agentic &amp; multi-agent AI</li>
+                <li>LLM applications</li>
+                <li>Zero-knowledge proofs</li>
+                <li>Computer vision</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="principles" data-stagger aria-label="How I work">
+          <div class="principle"><h3>Understand first</h3><p>The right problem beats a clever answer to the wrong one.</p></div>
+          <div class="principle"><h3>Keep it simple</h3><p>Advice from a mentor that stuck: simple systems are easier to trust.</p></div>
+          <div class="principle"><h3>Measure, then optimise</h3><p>I profile queries and APIs before touching them, and check the result after.</p></div>
+          <div class="principle"><h3>Build to last</h3><p>Reliable, maintainable and clear enough for the next engineer.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== EXPERIENCE ===== -->
+    <section class="section" id="experience" aria-labelledby="exp-title">
+      <div class="wrap">
+        <div class="sec-head">
+          <h2 id="exp-title" data-reveal>Experience</h2>
+        </div>
+
+        <div class="timeline" id="timeline">
+          <article class="xp" data-reveal>
+            <div>
+              <h3 class="xp__org">Emergys Solutions Pvt. Ltd.</h3>
+              <p class="xp__date">Aug 2024 – Present</p>
+              <p class="xp__now"><span class="dot" aria-hidden="true"></span>Current role</p>
             </div>
             <div>
-                <img src="assets/icon/search-activity-icon.svg" />
+              <p class="xp__role">Associate Consultant</p>
+              <ul class="xp__list">
+                <li><strong>EMY AI.</strong> Built the FastAPI backend and a LangGraph agentic workflow that lets people query relational databases in natural language: intent classification, schema and data retrieval, SQL generation and revision, with model-agnostic LLM selection and a database connection pool.</li>
+                <li><strong>Global Trade Optimizer.</strong> Led UI development of the Should Costing module in React.js and Redux: modular components, What-If SKU-to-model mapping and interactive cost dashboards.</li>
+                <li>Optimised REST APIs, complex SQL and stored procedures. Common Table Expressions and indexing took queries over large HS-code datasets from minutes to seconds.</li>
+                <li><strong>Pennakem.</strong> Built a should-costing module and an LLM-assisted supplier portal for the chemical industry: web search finds suppliers, data is extracted automatically and language models fill in missing details.</li>
+              </ul>
+              <ul class="xp__stack" aria-label="Technologies">
+                <li class="tag">FastAPI</li><li class="tag">LangGraph</li><li class="tag">React.js</li><li class="tag">Redux</li><li class="tag">Node.js</li><li class="tag">Express.js</li><li class="tag">MSSQL</li><li class="tag">Prompt engineering</li>
+              </ul>
             </div>
+          </article>
+
+          <article class="xp" data-reveal>
+            <div><h3 class="xp__org">Mandrake Tech Pvt Ltd</h3><p class="xp__date">Aug 2023 – Oct 2023</p></div>
             <div>
-                <img src="assets/icon/icons8-code-fork-48.png" class="git-icon" />
+              <p class="xp__role">Software Development Intern</p>
+              <ul class="xp__list">
+                <li>Built a mock Gmail API server in <strong>Rust</strong> with RESTful endpoints that simulate Gmail operations for backend development and testing.</li>
+                <li>Implemented the Google OAuth 2.0 flow: authorisation, token exchange and authenticated API access.</li>
+                <li>Applied Rust ownership, borrowing, error handling and modular design, working in GitFlow.</li>
+              </ul>
             </div>
-            <div class="setting-icon">
-                <img src="assets/icon/settings-icon.svg" class="settings-icon" />
+          </article>
+
+          <article class="xp" data-reveal>
+            <div><h3 class="xp__org">Persistent Systems</h3><p class="xp__date">Jul 2023 – Aug 2023</p></div>
+            <div>
+              <p class="xp__role">Martian Intern</p>
+              <ul class="xp__list">
+                <li>Completed an intensive programme in Linux, RDBMS and Core Java.</li>
+                <li>Practised Linux administration (users, processes, file permissions) and SQL across DDL, DML, DCL and TCL.</li>
+                <li>Strengthened Core Java: OOP, data structures and exception handling.</li>
+              </ul>
             </div>
+          </article>
+
+          <article class="xp" data-reveal>
+            <div><h3 class="xp__org">Intel</h3><p class="xp__date">May 2023 – Jul 2023</p></div>
+            <div>
+              <p class="xp__role">Intel Unnati Summer Intern</p>
+              <ul class="xp__list">
+                <li>Built a social-distancing detection system: <strong>YOLOv5</strong> for people detection, with distance estimated from camera resolution, focal length and pixel distance.</li>
+                <li>Designed and optimised a real-time pipeline that processes live video and flags violations.</li>
+                <li>Hands-on with computer vision, object detection, OpenCV and model optimisation.</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROJECTS ===== -->
+    <section class="section dark" id="projects" aria-labelledby="proj-title">
+      <div class="wrap">
+        <div class="sec-head">
+          <h2 id="proj-title" data-reveal>Selected projects</h2>
         </div>
 
-        <!-- EXPLORER -->
-        <div class="explorer">
-            <div class="explorer-title">
-                <span>EXPLORER</span>
-                <img src="assets/icon/options-svgrepo-com.svg" class="explorer-options-icon" />
-            </div>
-            <div class="files-container">
-                <div class="files-title">
-                    <img src="assets/icon/Dropdown icon.svg" />
-                    Personal Portfolio
-                </div>
-                <div class="files">
-                    <div class="file" data-file="about">
-                        <img src="assets/icon/markdown-svgrepo-com.svg" class="md-file-icon" />
-                        About.md
-                    </div>
-                    <div class="file" data-file="experience">
-                        <img src="assets/icon/markdown-svgrepo-com.svg" class="md-file-icon" />
-                        Experience.md
-                    </div>
-                    <div class="file" data-file="projects">
-                        <img src="assets/icon/markdown-svgrepo-com.svg" class="md-file-icon" />
-                        Projects.md
-                    </div>
-                    <div class="file" data-file="skills">
-                        <img src="assets/icon/markdown-svgrepo-com.svg" class="md-file-icon" />
-                        Skills.md
-                    </div>
-                    <div class="file" data-file="education">
-                        <img src="assets/icon/markdown-svgrepo-com.svg" class="md-file-icon" />
-                        Education.md
-                    </div>
-                    <div class="file" data-file="contact">
-                        <img src="assets/icon/markdown-svgrepo-com.svg" class="md-file-icon" />
-                        Contact.md
-                    </div>
-                </div>
-            </div>
+        <div class="filters" id="filters" role="group" aria-label="Filter projects" data-reveal>
+          <button type="button" data-f="all" aria-pressed="true">All</button>
+          <button type="button" data-f="ai" aria-pressed="false">AI &amp; LLM</button>
+          <button type="button" data-f="fullstack" aria-pressed="false">Full-stack</button>
+          <button type="button" data-f="backend" aria-pressed="false">Backend &amp; systems</button>
+          <button type="button" data-f="vision" aria-pressed="false">Computer vision</button>
+          <span class="filters__count" id="count" role="status" aria-live="polite">10 projects</span>
         </div>
 
-        <!-- EDITOR AREA -->
-        <div class="editor">
-            <div class="tabs">
-                <div class="tab" data-file="about">
-                    <img src="assets/icon/markdown-svgrepo-com.svg" class="" />
-                    <span>About.md</span>
-                </div>
-                <div class="tab" data-file="experience">
-                    <img src="assets/icon/markdown-svgrepo-com.svg" class="" />
-                    <span>Experience.md</span>
-                </div>
-                <div class="tab" data-file="projects">
-                    <img src="assets/icon/markdown-svgrepo-com.svg" class="" />
-                    <span>Projects.md</span>
-                </div>
-                <div class="tab" data-file="skills">
-                    <img src="assets/icon/markdown-svgrepo-com.svg" class="" />
-                    <span>Skills.md</span>
-                </div>
-                <div class="tab" data-file="education">
-                    <img src="assets/icon/markdown-svgrepo-com.svg" class="" />
-                    <span>Education.md</span>
-                </div>
-                <div class="tab" data-file="contact">
-                    <image src="assets/icon/markdown-svgrepo-com.svg" class="" />
-                    <span>Contact.md</span>
-                </div>
-                <div class="editor-btn-icons">
-                    <img src="assets/icon/play-svgrepo-com.svg" class="play-icon" />
-                    <img src="assets/icon/git-diff-svgrepo-com.svg" class="play-icon" />
-                    <img src="assets/icon/options-svgrepo-com.svg" class="explorer-options-icon" />
-                </div>
+        <div class="projects" id="projectGrid" data-stagger>
+          <article class="card" data-tags="ai backend">
+            <div class="card__thumb"><img src="assets/img/thumbs/agentic.svg" alt="Abstract workflow diagram: intent, schema, SQL, revise" width="640" height="400" loading="lazy"><span class="card__kind">Built at Emergys</span></div>
+            <div class="card__body">
+              <h3 class="card__title">EMY AI <svg class="ic" aria-hidden="true"><use href="#i-out"/></svg></h3>
+              <p class="card__desc">A platform for talking to relational databases in plain English.</p>
+              <dl>
+                <div><dt>Problem</dt><dd>Getting an LLM to reliably understand a database’s context and write SQL that actually runs.</dd></div>
+                <div><dt>What I did</dt><dd>Built the FastAPI backend on LangGraph: model-agnostic, with an intent classifier, schema retrieval, query generation and revision, and a connection pool.</dd></div>
+                <div><dt>Stack</dt><dd><ul class="chips"><li>FastAPI</li><li>LangGraph</li><li>LLMs</li><li>SQL</li></ul></dd></div>
+              </dl>
             </div>
+          </article>
 
-            <div class="content-container">
-                <div class="content">
-                    <div class="markdown-container section" id="about">
-                        <h1>📖 About</h1>
-                        <hr />
-
-                        <p>
-                            Computer Science graduate and technology professional with a deep interest in artificial
-                            intelligence, machine learning, and systems engineering. Committed to continuous learning
-                            and intellectual growth, with a strong foundation in algorithms, data structures, and
-                            software design principles.
-
-                            Motivated to explore complex problems, bridge theory with real-world implementation, and
-                            contribute to the development of responsible and impactful computing solutions.
-                        </p>
-
-                    </div>
-                    <div class="markdown-container section" id="experience">
-
-                        <h1>👨‍💻 Experience</h1>
-                        <hr />
-
-                        <!-- Emergys -->
-                        <h2 class="company">
-                            Emergys Solutions Pvt. Ltd.
-                            <span class="date">(Aug 2024 – Present)</span>
-                        </h2>
-
-                        <h3 class="role">Sr. Software Engineer</h3>
-
-                        <ul>
-                            <li>Lead UI development of the <strong>Should Costing</strong> module in Global Trade
-                                Optimizer (GTO) using React.js, Redux, Node.js, Express.js, and MSSQL.</li>
-                            <li>Engineered modular and reusable UI components to improve scalability and maintain
-                                consistent high-performance interfaces.</li>
-                            <li>Implemented a dynamic <strong>“What-If” scenario engine</strong> enabling SKU-to-model
-                                mapping for flexible cost analysis workflows.</li>
-                            <li>Optimized API integrations and SQL queries, reducing response time from minutes to
-                                seconds and improving system performance by ~30%.</li>
-                            <li>Developed interactive dashboards and visualization components (waterfall and line
-                                charts) to support data-driven decision-making.</li>
-                        </ul>
-
-                        <div class="section-divider"></div>
-
-                        <!-- Mandrake -->
-                        <h2 class="company">
-                            Mandrake Tech Pvt Ltd
-                            <span class="date">(Aug 2023 – Oct 2023)</span>
-                        </h2>
-
-                        <h3 class="role">Software Development Intern</h3>
-
-                        <ul>
-                            <li>Built a CLI-based Expense Tracker in Rust to record transactions and manage financial
-                                summaries.</li>
-                            <li>Implemented JSON-based persistence to simulate database operations.</li>
-                            <li>Applied modular programming principles to enhance maintainability and scalability.</li>
-                            <li>Strengthened proficiency in Rust (ownership, borrowing, error handling) and GitFlow
-                                version control.</li>
-                        </ul>
-
-                        <div class="section-divider"></div>
-
-                        <!-- Persistent -->
-                        <h2 class="company">
-                            Persistent Systems
-                            <span class="date">(July 2023 – Aug 2023)</span>
-                        </h2>
-
-                        <h3 class="role">Martian Intern</h3>
-
-                        <ul>
-                            <li>Completed intensive training in Linux, RDBMS, and Core Java.</li>
-                            <li>Gained hands-on experience in Linux administration, user management, and process
-                                handling.</li>
-                            <li>Practiced relational database operations (DDL, DML, DCL, TCL) using SQL.</li>
-                            <li>Strengthened foundations in OOP, data structures, and exception handling.</li>
-                        </ul>
-
-                        <div class="section-divider"></div>
-
-                        <!-- Intel -->
-                        <h2 class="company">
-                            Intel
-                            <span class="date">(May 2023 – July 2023)</span>
-                        </h2>
-
-                        <h3 class="role">Intel Unnati Summer Intern</h3>
-
-                        <ul>
-                            <li>Developed a real-time social distancing detection system using YOLOv5.</li>
-                            <li>Implemented distance estimation algorithms using camera resolution and focal length
-                                calculations.</li>
-                            <li>Designed and optimized live video processing pipeline for real-time violation detection.
-                            </li>
-                            <li>Gained practical exposure to computer vision, OpenCV, and model optimization workflows.
-                            </li>
-                        </ul>
-
-                    </div>
-                    <div class="markdown-container section" id="projects">
-
-                        <h1>🧪 Projects</h1>
-                        <hr />
-
-                        <!-- Electri-wise -->
-                        <h2 class="project-title">Electri-wise 🔗</h2>
-
-                        <ul>
-                            <li>Developed a role-based Electricity Meter Management System using React and Node.js.</li>
-                            <li>Implemented separate dashboards for Admin and User roles with controlled access.</li>
-                            <li>Enabled users to manage multiple meters and analyze electricity consumption quarterly
-                                and yearly.</li>
-                            <li>Integrated Redux for centralized state management across the UI.</li>
-                            <li>Designed REST APIs for secure data retrieval and analytics processing.</li>
-                        </ul>
-
-                        <div class="section-divider"></div>
-
-                        <!-- Smart Workout Companion -->
-                        <h2 class="project-title">Smart Workout Companion 🔗</h2>
-
-                        <ul>
-                            <li>Developed a real-time yoga pose detection and repetition counting application.</li>
-                            <li>Integrated OpenCV and MediaPipe for live video-based pose tracking.</li>
-                            <li>Connected Flask backend with React frontend for exercise monitoring and streaming.</li>
-                            <li>Overcame challenges in real-time video processing and system integration.</li>
-                        </ul>
-
-                        <div class="section-divider"></div>
-
-                        <!-- Mock Gmail API -->
-                        <h2 class="project-title">Mock Gmail API 🔗</h2>
-
-                        <ul>
-                            <li>Built a mock Gmail API using Node.js and Express.js to simulate Gmail interactions.</li>
-                            <li>Implemented OAuth 2.0 authentication flow for secure authorization and token exchange.
-                            </li>
-                            <li>Enabled retrieval of mock Gmail data after secure authentication.</li>
-                            <li>Gained hands-on experience in secure API design and authentication mechanisms.</li>
-                        </ul>
-
-                        <div class="section-divider"></div>
-
-                        <!-- Expense Tracker -->
-                        <h2 class="project-title">Expense Tracker 🔗</h2>
-
-                        <ul>
-                            <li>Built a CLI-based application for recording, retrieving, and deleting transactions.</li>
-                            <li>Implemented JSON-based data serialization and persistence.</li>
-                            <li>Ensured reliability through unit testing and modular architecture.</li>
-                            <li>Demonstrated proficiency in Rust and Java for command-line development.</li>
-                        </ul>
-
-                    </div>
-
-                    <div class="markdown-container section" id="skills">
-
-                        <h1>🛠 Skills</h1>
-                        <hr />
-
-                        <div class="skills-grid">
-
-                            <!-- Programming -->
-                            <div class="skill-card">
-                                <h2>Programming Languages</h2>
-                                <div class="skill-tags">
-                                    <span class="skill-tag strong">Java</span>
-                                    <span class="skill-tag strong">JavaScript</span>
-                                    <span class="skill-tag strong">Rust</span>
-                                    <span class="skill-tag strong">Python</span>
-                                    <span class="skill-tag strong">C++</span>
-
-                                    <span class="skill-tag">C</span>
-                                    <span class="skill-tag">SQL</span>
-                                    <span class="skill-tag">MongoDB</span>
-                                </div>
-                            </div>
-
-                            <!-- Web -->
-                            <div class="skill-card">
-                                <h2>Web Development</h2>
-                                <div class="skill-tags">
-                                    <span class="skill-tag strong">React.js</span>
-                                    <span class="skill-tag strong">Node.js</span>
-                                    <span class="skill-tag strong">Express.js</span>
-                                    <span class="skill-tag">Flask</span>
-                                    <span class="skill-tag">HTML</span>
-                                    <span class="skill-tag">CSS</span>
-                                    <span class="skill-tag">Redux</span>
-                                </div>
-                            </div>
-
-                            <!-- Libraries -->
-                            <div class="skill-card">
-                                <h2>Frameworks & Libraries</h2>
-                                <div class="skill-tags">
-                                    <span class="skill-tag">Pandas</span>
-                                    <span class="skill-tag">NumPy</span>
-                                    <span class="skill-tag">Matplotlib</span>
-                                    <span class="skill-tag">Scikit-learn</span>
-                                </div>
-                            </div>
-
-                            <!-- Tools -->
-                            <div class="skill-card">
-                                <h2>Version Control & Tools</h2>
-                                <div class="skill-tags">
-                                    <span class="skill-tag">Git</span>
-                                    <span class="skill-tag">Git Flow</span>
-                                </div>
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                    <div class="markdown-container section" id="education">
-
-                        <h1>🎓 Education</h1>
-                        <hr />
-
-                        <div class="timeline">
-
-                            <div class="timeline-item">
-                                <div class="timeline-marker"></div>
-                                <div class="timeline-content">
-                                    <div class="timeline-title">
-                                        <h2>Marathwada Mitra Mandal's College of Engineering, Pune (SPPU)</h2>
-                                        <span class="timeline-date">2020 – 2024</span>
-                                    </div>
-                                    <p><strong>Bachelor’s in Computer Science Engineering with Honours in Data
-                                            Science</strong></p>
-                                    <p>CGPA: <strong>8.84 / 10.0</strong></p>
-                                </div>
-                            </div>
-
-                            <div class="timeline-item">
-                                <div class="timeline-marker"></div>
-                                <div class="timeline-content">
-                                    <div class="timeline-title">
-                                        <h2>S.P College</h2>
-                                        <span class="timeline-date">2019-2020</span>
-                                    </div>
-                                    <p><strong>Higher Secondary Certification</strong></p>
-                                    <p>Percentage: <strong>84%</strong></p>
-                                </div>
-                            </div>
-
-                            <div class="timeline-item">
-                                <div class="timeline-marker"></div>
-                                <div class="timeline-content">
-                                    <div class="timeline-title">
-                                        <h2>Vishwakarma Vidyalaya English Secondary</h2>
-                                        <span class="timeline-date">2017-2018</span>
-                                    </div>
-                                    <p><strong>Secondary School Certification</strong></p>
-                                    <p>Percentage: <strong>94%</strong></p>
-                                </div>
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                    <div class="markdown-container section" id="contact">
-                        <h1>📩 Contact</h1>
-                        <hr />
-
-                        <div class="contact-container">
-                            <h2 class="contact-name">Atharva Yanna</h2>
-                            <p class="contact-tagline">Think twice, code once.</p>
-
-                            <div class="links">
-
-                                <a href="mailto:atharvay24@gmail.com" class="badge">
-                                    ✉ Email
-                                </a>
-
-                                <a href="https://github.com/atharva2408" target="_blank" class="badge">
-                                    GitHub
-                                </a>
-
-                                <a href="https://www.linkedin.com/in/atharvayanna/" target="_blank" class="badge">
-                                    LinkedIn
-                                </a>
-
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
+          <article class="card" data-tags="fullstack backend">
+            <div class="card__thumb"><img src="assets/img/thumbs/costing.svg" alt="Abstract waterfall chart with highlighted total" width="640" height="400" loading="lazy"><span class="card__kind">Built at Emergys</span></div>
+            <div class="card__body">
+              <h3 class="card__title">Global Trade Optimizer: Should Costing <svg class="ic" aria-hidden="true"><use href="#i-out"/></svg></h3>
+              <p class="card__desc">Supply-chain and should-costing platform with what-if cost analysis.</p>
+              <dl>
+                <div><dt>Problem</dt><dd>What-if analysis over large HS-code datasets had to stay fast.</dd></div>
+                <div><dt>What I did</dt><dd>Led the React UI: reusable components, SKU-to-model mapping and waterfall and line-chart dashboards. Cut query latency from minutes to seconds with CTEs and indexing.</dd></div>
+                <div><dt>Stack</dt><dd><ul class="chips"><li>React.js</li><li>Redux</li><li>Node.js</li><li>Express.js</li><li>MSSQL</li></ul></dd></div>
+              </dl>
             </div>
+          </article>
 
+          <article class="card" data-tags="ai fullstack">
+            <div class="card__thumb"><img src="assets/img/thumbs/supplier.svg" alt="Abstract search results being filled into a supplier record" width="640" height="400" loading="lazy"><span class="card__kind">Built at Emergys</span></div>
+            <div class="card__body">
+              <h3 class="card__title">Pennakem supplier portal <svg class="ic" aria-hidden="true"><use href="#i-out"/></svg></h3>
+              <p class="card__desc">A should-costing module and LLM-assisted supplier portal for the chemical industry.</p>
+              <dl>
+                <div><dt>Problem</dt><dd>Supplier details were scattered across the web and often incomplete.</dd></div>
+                <div><dt>What I did</dt><dd>Extracted supplier information from web search results and used language models to populate missing fields.</dd></div>
+                <div><dt>Stack</dt><dd><ul class="chips"><li>Web search</li><li>Data extraction</li><li>Prompt engineering</li><li>LLMs</li></ul></dd></div>
+              </dl>
+            </div>
+          </article>
+
+          <article class="card" data-tags="ai vision">
+            <div class="card__thumb"><img src="assets/img/thumbs/pose.svg" alt="Abstract yoga pose skeleton with tracked joints" width="640" height="400" loading="lazy"><span class="card__kind">Final-year project · paper</span></div>
+            <div class="card__body">
+              <h3 class="card__title">PoseCraft Fitness Navigator <svg class="ic" aria-hidden="true"><use href="#i-out"/></svg></h3>
+              <p class="card__desc">Real-time posture monitoring, repetition counting and guided yoga and meditation.</p>
+              <dl>
+                <div><dt>Problem</dt><dd>Accessible exercise guidance that responds to you live.</dd></div>
+                <div><dt>What I did</dt><dd>Built the webcam pipeline: OpenCV capture, MediaPipe body landmarks and low-latency feedback. Presented the paper at ICRTACT 2024.</dd></div>
+                <div><dt>Stack</dt><dd><ul class="chips"><li>OpenCV</li><li>MediaPipe</li><li>Flask</li><li>Deep learning</li></ul></dd></div>
+              </dl>
+            </div>
+          </article>
+
+          <article class="card" data-tags="backend">
+            <div class="card__thumb"><img src="assets/img/thumbs/zk.svg" alt="Abstract zero-knowledge proof: a locked box produces a verified check mark" width="640" height="400" loading="lazy"><span class="card__kind">Open source</span></div>
+            <div class="card__body">
+              <h3 class="card__title">Zero Knowledge Compute Gateway <svg class="ic" aria-hidden="true"><use href="#i-out"/></svg></h3>
+              <p class="card__desc">An independent open-source project on verifiable computation.</p>
+              <dl>
+                <div><dt>Problem</dt><dd>Proving a computation ran correctly without re-running it.</dd></div>
+                <div><dt>What I did</dt><dd>Contributed to architecture, research and debugging of proof pipelines on the RISC Zero zkVM.</dd></div>
+                <div><dt>Stack</dt><dd><ul class="chips"><li>RISC Zero</li><li>zkVM</li><li>Zero-knowledge proofs</li></ul></dd></div>
+              </dl>
+            </div>
+          </article>
+
+          <article class="card" data-tags="ai">
+            <div class="card__thumb"><img src="assets/img/thumbs/chatbot.svg" alt="Abstract chat bubbles" width="640" height="400" loading="lazy"><span class="card__kind">Smart India Hackathon</span></div>
+            <div class="card__body">
+              <h3 class="card__title">Mining-law chatbot <svg class="ic" aria-hidden="true"><use href="#i-out"/></svg></h3>
+              <p class="card__desc">A 24-hour hackathon chatbot for questions about mining laws in India.</p>
+              <dl>
+                <div><dt>Problem</dt><dd>General-purpose language models struggle with a specialised legal domain.</dd></div>
+                <div><dt>What I did</dt><dd>Compared Hugging Face transformer models on domain queries, including GPT-Neo 1.3B, and integrated the best into a Streamlit prototype.</dd></div>
+                <div><dt>Stack</dt><dd><ul class="chips"><li>Hugging Face</li><li>Transformers</li><li>Streamlit</li><li>Python</li></ul></dd></div>
+              </dl>
+            </div>
+          </article>
+
+          <article class="card" data-tags="ai vision">
+            <div class="card__thumb"><img src="assets/img/thumbs/mri.svg" alt="Abstract brain scan with a highlighted region and a neural network" width="640" height="400" loading="lazy"><span class="card__kind">Academic project</span></div>
+            <div class="card__body">
+              <h3 class="card__title">Brain-tumour detection <svg class="ic" aria-hidden="true"><use href="#i-out"/></svg></h3>
+              <p class="card__desc">Detecting tumours in MRI images with a convolutional neural network.</p>
+              <dl>
+                <div><dt>Problem</dt><dd>Limited, varied MRI data made training a CNN from scratch hard.</dd></div>
+                <div><dt>What I did</dt><dd>Used VGG16 transfer learning: removed its classification head, froze the convolutional base and trained a new task-specific layer.</dd></div>
+                <div><dt>Stack</dt><dd><ul class="chips"><li>CNN</li><li>VGG16</li><li>Transfer learning</li><li>Python</li></ul></dd></div>
+              </dl>
+            </div>
+          </article>
+
+          <article class="card" data-tags="backend">
+            <div class="card__thumb"><img src="assets/img/thumbs/mail.svg" alt="Abstract envelope with OAuth 2.0 token chip" width="640" height="400" loading="lazy"><span class="card__kind">Internship project</span></div>
+            <div class="card__body">
+              <h3 class="card__title">Mock Gmail API server <svg class="ic" aria-hidden="true"><use href="#i-out"/></svg></h3>
+              <p class="card__desc">A Rust server that imitates Gmail’s API, protected by Google OAuth 2.0.</p>
+              <dl>
+                <div><dt>Problem</dt><dd>Backend development and testing without depending on the live Gmail service.</dd></div>
+                <div><dt>What I did</dt><dd>Wrote the RESTful endpoints and the OAuth 2.0 authorisation, token exchange and authenticated access.</dd></div>
+                <div><dt>Stack</dt><dd><ul class="chips"><li>Rust</li><li>REST</li><li>OAuth 2.0</li><li>GitFlow</li></ul></dd></div>
+              </dl>
+            </div>
+          </article>
+
+          <article class="card" data-tags="fullstack">
+            <div class="card__thumb"><img src="assets/img/thumbs/meter.svg" alt="Abstract meter dial and quarterly bars" width="640" height="400" loading="lazy"><span class="card__kind">Personal project</span></div>
+            <div class="card__body">
+              <h3 class="card__title">Electri-wise <svg class="ic" aria-hidden="true"><use href="#i-out"/></svg></h3>
+              <p class="card__desc">A role-based electricity meter management system.</p>
+              <dl>
+                <div><dt>Problem</dt><dd>Tracking electricity use across several meters, by quarter and by year.</dd></div>
+                <div><dt>What I did</dt><dd>Built separate Admin and User dashboards with controlled access, Redux state management and REST APIs for analytics.</dd></div>
+                <div><dt>Stack</dt><dd><ul class="chips"><li>React</li><li>Redux</li><li>Node.js</li><li>REST APIs</li></ul></dd></div>
+              </dl>
+            </div>
+          </article>
+
+          <article class="card" data-tags="backend">
+            <div class="card__thumb"><img src="assets/img/thumbs/ledger.svg" alt="Abstract terminal window with ledger rows" width="640" height="400" loading="lazy"><span class="card__kind">Personal project</span></div>
+            <div class="card__body">
+              <h3 class="card__title">Expense Tracker <svg class="ic" aria-hidden="true"><use href="#i-out"/></svg></h3>
+              <p class="card__desc">A command-line app for recording, retrieving and deleting transactions.</p>
+              <dl>
+                <div><dt>Problem</dt><dd>Managing personal transactions without leaving the terminal.</dd></div>
+                <div><dt>What I did</dt><dd>Built it with JSON persistence, a modular structure and unit tests.</dd></div>
+                <div><dt>Stack</dt><dd><ul class="chips"><li>Rust</li><li>Java</li><li>JSON</li><li>Unit testing</li></ul></dd></div>
+              </dl>
+            </div>
+          </article>
         </div>
-    </div>
 
-    <!-- STATUS BAR -->
-    <div class="status-bar">
-        <div class="bottom-arrows">
-            <img src="assets/icon/Bottom-2arows.svg" class="bottom-arrows-icon" />
-        </div>
-        <div class="status-container">
-            <div class="status-left">
-                <div>
-                    <img src="assets/icon/git-icon-grey.svg" class="status-git-icon" />
-                    <span>development/portfolio</span>
-                </div>
-                <div>
-                    <img src="assets/icon/cancel-icon.svg" class="status-cancel-icon" />
-                    <span>0</span>
-                </div>
-                <div>
-                    <img src="assets/icon/warning-light-grey.svg" class="status-warning-icon" />
-                    <span>0</span>
-                </div>
-            </div>
-            <div class="status-right">
-                <span>Ln 1, Col 1</span>
-                <span>UTF-8</span>
-                <span>CRLF</span>
-            </div>
-        </div>
-    </div>
+        <p class="projects__more" data-reveal>
+          <span>More repositories and experiments live on GitHub.</span>
+          <a class="textlink" href="https://github.com/atharva2408" target="_blank" rel="noopener">github.com/atharva2408 <svg class="ic" aria-hidden="true"><use href="#i-out"/></svg></a>
+        </p>
 
-    <script src="script.js"></script>
+      </div>
+    </section>
+
+    <!-- ===== SKILLS ===== -->
+    <section class="section" id="skills" aria-labelledby="skills-title">
+      <div class="wrap">
+        <div class="sec-head">
+          <h2 id="skills-title" data-reveal>Skills</h2>
+        </div>
+        <div class="skills" data-stagger>
+          <div class="skill" tabindex="0"><h3>Languages</h3><p><span class="k">Python</span><span>TypeScript</span><span class="k">JavaScript</span><span>Java</span><span>Rust</span><span>C++</span><span>C</span><span class="k">SQL</span></p></div>
+          <div class="skill" tabindex="0"><h3>Frontend</h3><p><span class="k">React.js</span><span class="k">Redux</span><span>HTML</span><span>CSS</span><span>Data visualisation</span></p></div>
+          <div class="skill" tabindex="0"><h3>Backend &amp; APIs</h3><p><span class="k">Node.js</span><span class="k">Express.js</span><span class="k">FastAPI</span><span>Flask</span><span>Celery</span><span>REST APIs</span><span>OAuth 2.0</span></p></div>
+          <div class="skill" tabindex="0"><h3>AI &amp; machine learning</h3><p><span class="k">LangGraph</span><span class="k">LLM integration</span><span class="k">Prompt engineering</span><span>Deep learning</span><span>Transfer learning</span><span>YOLOv5</span><span>OpenCV</span><span>MediaPipe</span><span>Hugging Face</span><span>Scikit-learn</span></p></div>
+          <div class="skill" tabindex="0"><h3>Data &amp; databases</h3><p><span class="k">MSSQL</span><span>MongoDB</span><span>Redis</span><span>Pandas</span><span>NumPy</span><span>Matplotlib</span></p></div>
+          <div class="skill" tabindex="0"><h3>Cloud (certified)</h3><p><span>Azure AI Fundamentals</span><span>AWS Cloud Architecting</span><span>AWS Cloud Foundations</span></p></div>
+          <div class="skill" tabindex="0"><h3>Tools</h3><p><span>Git</span><span>GitFlow</span><span>Linux</span><span>Streamlit</span><span>Docker</span></p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== EDUCATION ===== -->
+    <section class="section tint" id="education" aria-labelledby="edu-title">
+      <div class="wrap">
+        <div class="sec-head">
+          <h2 id="edu-title" data-reveal>Education &amp; research</h2>
+        </div>
+
+        <div class="edu" data-stagger>
+          <div class="edu__row">
+            <p class="edu__years">2020 – 2024</p>
+            <div class="edu__main">
+              <h3>Marathwada Mitra Mandal’s College of Engineering, Pune (SPPU)</h3>
+              <p>Bachelor of Engineering in Computer Science, Honours in Data Science</p>
+            </div>
+            <p class="edu__score"><strong>8.84</strong><span>CGPA</span></p>
+          </div>
+          <div class="edu__row">
+            <p class="edu__years">2020</p>
+            <div class="edu__main"><h3>S.P. College</h3><p>Higher Secondary Certificate · Maharashtra State Board</p></div>
+            <p class="edu__score"><strong>84%</strong><span>12th grade</span></p>
+          </div>
+          <div class="edu__row">
+            <p class="edu__years">2018</p>
+            <div class="edu__main"><h3>Vishwakarma Vidyalaya English Secondary</h3><p>Secondary School Certificate · Maharashtra State Board</p></div>
+            <p class="edu__score"><strong>94%</strong><span>10th grade</span></p>
+          </div>
+        </div>
+
+        <div class="recog" data-stagger>
+          <div>
+            <h3>Research</h3>
+            <ul>
+              <li>PoseCraft Fitness Navigator: a Flask-integrated AI system for yoga and exercise monitoring<small>Posture monitoring and yoga pose refinement with MediaPipe and deep learning</small></li>
+              <li>The effect of fake reviews on e-commerce<small>Fake-review classification with SVM, KNN and Logistic Regression plus sentiment analysis · Jun – Nov 2023</small></li>
+            </ul>
+          </div>
+          <div>
+            <h3>Achievements</h3>
+            <ul>
+              <li>Presented a peer-reviewed paper at ICRTACT 2024<small>International Conference on Recent Trends &amp; Advancements in Computing Technologies</small></li>
+              <li>2nd rank, Project Based Learning Competition<small>Issued by MMCOE</small></li>
+              <li>Smart India Hackathon participant<small>24-hour build of a legal-domain chatbot</small></li>
+            </ul>
+          </div>
+          <div>
+            <h3>Certifications</h3>
+            <ul>
+              <li>Microsoft Azure AI Fundamentals</li>
+              <li>AWS Academy Graduate<small>Cloud Architecting</small></li>
+              <li>AWS Academy Graduate<small>Cloud Foundations</small></li>
+            </ul>
+          </div>
+          <div>
+            <h3>Teams &amp; communities</h3>
+            <ul>
+              <li>AI/ML Engineer, Team Code<small>Jun 2023 – Jan 2024</small></li>
+              <li>Association of Computer Engineers<small>Helped organise national-level coding events with 500+ participants</small></li>
+              <li>Google Developer Students Club, marketing<small>Promoted events and engaged 1,000+ students</small></li>
+              <li>Technical team, Robocon Rudra<small>Robot software and proofs of concept</small></li>
+              <li>ISACA student member · Rotaract Club of Pune City Fortune</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section class="section dark contact" id="contact" aria-labelledby="contact-title">
+      <div class="wrap">
+        <div class="contact__grid">
+          <div>
+            <h2 class="contact__title" id="contact-title" data-reveal>Let’s talk</h2>
+            <p class="contact__lede" data-reveal style="--d:80ms">Open to conversations about software engineering roles, AI and ML work, and graduate research. Email is the fastest way to reach me.</p>
+            <ul class="roles" data-stagger aria-label="Open to">
+              <li>Software engineer</li><li>AI / ML engineer</li><li>Full-stack developer</li><li>Research collaboration</li>
+            </ul>
+          </div>
+          <div class="contact__main" data-reveal style="--d:120ms">
+            <a class="contact__mail" id="mailLink" href="mailto:atharvay24@gmail.com">atharvay24@gmail.com</a>
+            <div class="contact__row">
+              <a class="btn btn--primary" href="mailto:atharvay24@gmail.com?subject=Hello%20Atharva"><svg class="ic" aria-hidden="true"><use href="#i-mail"/></svg>Send an email</a>
+              <button class="btn btn--light" type="button" id="copyMail"><svg class="ic" aria-hidden="true"><use href="#i-copy"/></svg>Copy email</button>
+              <a class="btn btn--light" href="assets/Atharva_Yanna_Resume.pdf" target="_blank" rel="noopener"><svg class="ic" aria-hidden="true"><use href="#i-doc"/></svg>View resume</a>
+            </div>
+            <div class="contact__row">
+              <a class="btn btn--light" href="https://www.linkedin.com/in/atharvayanna/" target="_blank" rel="noopener">LinkedIn</a>
+              <a class="btn btn--light" href="https://github.com/atharva2408" target="_blank" rel="noopener">GitHub</a>
+            </div>
+          </div>
+        </div>
+        <footer class="foot">
+          <p><strong>© <span id="year">2026</span> Atharva Yanna.</strong> Always curious. Always building.</p>
+          <nav aria-label="Footer">
+            <a href="vscode/">View in VS Code</a>
+            <a href="assets/Atharva_Yanna_Resume.pdf" target="_blank" rel="noopener">Resume</a>
+            <a href="#home">Back to top</a>
+          </nav>
+        </footer>
+      </div>
+    </section>
+  </main>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="js/main.js" defer></script>
 </body>
-
 </html>

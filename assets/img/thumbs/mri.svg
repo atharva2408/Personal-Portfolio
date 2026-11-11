@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" role="img" aria-label="Abstract brain scan slice with a highlighted region and a neural network">
+<rect width="640" height="400" fill="#161616"/>
+<ellipse cx="190" cy="200" rx="110" ry="130" fill="none" stroke="#F3EEE3" stroke-opacity=".6" stroke-width="3"/>
+<path d="M190 80v240M120 150c40 20 100 20 140 0M118 250c40-20 104-20 144 0" fill="none" stroke="#F3EEE3" stroke-opacity=".3" stroke-width="2"/>
+<circle cx="228" cy="168" r="26" fill="#D9541E" fill-opacity=".85"/>
+<circle cx="228" cy="168" r="38" fill="none" stroke="#D9541E" stroke-width="2.5" stroke-dasharray="5 5"/>
+<g stroke="#F3EEE3" stroke-opacity=".4" stroke-width="2"><path d="M390 130L470 100M390 130L470 200M390 130L470 300M390 270L470 100M390 270L470 200M390 270L470 300M470 100L550 200M470 200L550 200M470 300L550 200"/></g>
+<g fill="#F3EEE3"><circle cx="390" cy="130" r="9"/><circle cx="390" cy="270" r="9"/><circle cx="470" cy="100" r="9" fill-opacity=".6"/><circle cx="470" cy="200" r="9" fill-opacity=".6"/><circle cx="470" cy="300" r="9" fill-opacity=".6"/></g>
+<circle cx="550" cy="200" r="11" fill="#D9541E"/>
+</svg>

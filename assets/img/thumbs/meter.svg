@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" role="img" aria-label="Abstract meter dial next to quarterly bars">
+<rect width="640" height="400" fill="#161616"/>
+<path d="M80 270A120 120 0 0 1 320 270" fill="none" stroke="#F3EEE3" stroke-opacity=".3" stroke-width="10" stroke-linecap="round"/>
+<path d="M80 270A120 120 0 0 1 230 154" fill="none" stroke="#D9541E" stroke-width="10" stroke-linecap="round"/>
+<g stroke="#F3EEE3" stroke-opacity=".5" stroke-width="2.5" stroke-linecap="round">
+<path d="M92 236l14 6M118 192l12 10M160 160l8 12M200 142l3 14M242 146l-2 14M284 166l-8 12M312 204l-12 8"/>
+</g>
+<path d="M200 270L252 200" stroke="#F3EEE3" stroke-width="5" stroke-linecap="round"/>
+<circle cx="200" cy="270" r="12" fill="#D9541E"/>
+<g fill="#F3EEE3" fill-opacity=".85">
+<rect x="385" y="230" width="38" height="90" fill-opacity=".35"/>
+<rect x="440" y="190" width="38" height="130" fill-opacity=".35"/>
+<rect x="495" y="160" width="38" height="160" fill-opacity=".35"/>
+<rect x="550" y="120" width="38" height="200" fill="#D9541E"/>
+</g>
+<path d="M370 320H605" stroke="#F3EEE3" stroke-opacity=".4" stroke-width="2"/>
+<g font-family="Inter Tight, Arial, sans-serif" font-size="14" font-weight="600" fill="#F3EEE3" fill-opacity=".6" text-anchor="middle">
+<text x="404" y="344">Q1</text><text x="459" y="344">Q2</text><text x="514" y="344">Q3</text><text x="569" y="344">Q4</text>
+</g>
+<g fill="#F3EEE3" fill-opacity=".25"><rect x="80" y="330" width="240" height="8" rx="2"/><rect x="80" y="348" width="150" height="8" rx="2"/></g>
+</svg>

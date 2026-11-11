@@ -1,3 +1,10 @@
+/* ============ THEME TOKENS (VS Code dark + portfolio accent) ============ */
+:root {
+    --accent: #007ACC;
+    --accent-text: #23A9F2;
+    --cream: #F3EEE3;
+}
+
 /* ================= GLOBAL ================= */
 
 body {
@@ -76,7 +83,7 @@ body {
 }
 
 .files-div {
-    border-left: 0.25rem solid #0078d4;
+    border-left: 0.25rem solid var(--accent);
 }
 
 .setting-icon {
@@ -178,7 +185,7 @@ body {
 
 .tab.active-tab {
     background-color: #1e1e1e;
-    border-top: 1px solid #007acc; 
+    border-top: 1px solid var(--accent); 
 }
 
 .editor-btn-icons {
@@ -262,7 +269,7 @@ body {
 .company {
     font-size: 1.25rem;
     font-weight: 600;
-    color: #4ea1ff;
+    color: var(--accent-text);
     display: flex;
     align-items: center;
 }
@@ -308,7 +315,7 @@ body {
     top: 0.1rem;
     width: 14px;
     height: 14px;
-    background-color: #007acc;
+    background-color: var(--accent);
     border-radius: 50%;
     border: 2px solid #1e1e1e;
 }
@@ -329,7 +336,7 @@ body {
 }
 
 .timeline-content h2 {
-    color: #4ea1ff;
+    color: var(--accent-text);
     font-size: 1.05rem;
 }
 
@@ -347,7 +354,7 @@ body {
 .project-title {
     font-size: 1.3rem;
     font-weight: 600;
-    color: #4ea1ff;
+    color: var(--accent-text);
 }
 
 /* ================= SKILLS ================= */
@@ -368,12 +375,12 @@ body {
 }
 
 .skill-card:hover {
-    border-color: #007acc;
+    border-color: var(--accent);
 }
 
 .skill-card h2 {
     font-size: 1rem;
-    color: #4ea1ff;
+    color: var(--accent-text);
     margin-bottom: 1rem;
 }
 
@@ -391,8 +398,9 @@ body {
 }
 
 .skill-tag.strong {
-    background-color: #007acc;
-    color: white;
+    background-color: var(--accent);
+    color: #111111;
+    font-weight: 600;
 }
 
 /* ================= CONTACT ================= */
@@ -434,8 +442,8 @@ body {
 }
 
 .badge:hover {
-    border-color: #007acc;
-    background-color: rgba(0, 122, 204, 0.08);
+    border-color: var(--accent);
+    background-color: rgba(0, 112, 204, 0.12);
     transform: translateY(-2px);
 }
 
@@ -662,4 +670,122 @@ body {
     .status-right{
         display: none;
     }
+}
+
+/* ================= PORTFOLIO ADDITIONS ================= */
+
+html { scroll-behavior: smooth; }
+
+.back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    color: var(--cream);
+    text-decoration: none;
+    font-size: 0.85rem;
+    padding: 0.2rem 0.7rem;
+    border-radius: 4px;
+    border: 1px solid #474747;
+    background: #2A2A2A;
+    transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+.back-link:hover,
+.back-link:focus-visible {
+    background-color: var(--accent);
+    border-color: var(--accent);
+    color: #111111;
+    outline: none;
+}
+
+.file:focus-visible,
+.tab:focus-visible {
+    outline: 1px solid var(--accent);
+    outline-offset: -1px;
+}
+
+.markdown-container h1,
+.company,
+.timeline-content h2 {
+    color: var(--cream);
+}
+
+.company { color: var(--accent-text); }
+.timeline-content h2 { color: var(--accent-text); }
+
+.markdown-container strong { color: var(--cream); }
+
+.md-list { padding-left: 1.2rem; }
+.md-list li { margin-bottom: 0.5rem; line-height: 1.6; }
+.md-list small { display: block; color: #9a9a9a; font-size: 0.8rem; }
+
+.impact-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 0.8rem;
+    margin: 1rem 0 1.2rem;
+}
+
+.impact-row div {
+    background: #1e1e1e;
+    border: 1px solid #2b2b2b;
+    border-left: 3px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.8rem 1rem;
+}
+
+.impact-row strong {
+    display: block;
+    font-size: 1.15rem;
+    color: var(--accent-text);
+}
+
+.impact-row span { font-size: 0.85rem; color: #c5c5c5; }
+
+.project-kind {
+    display: inline-block;
+    margin-left: 0.6rem;
+    font-size: 0.72rem;
+    font-weight: 500;
+    padding: 0.15rem 0.6rem;
+    border-radius: 12px;
+    background: #2b2b2b;
+    color: #c5c5c5;
+    vertical-align: middle;
+}
+
+.project-title { display: flex; align-items: center; flex-wrap: wrap; }
+
+.status-left .status-branch {
+    background-color: var(--accent);
+    color: #111111;
+    padding: 0 0.7rem;
+    align-self: stretch;
+    font-weight: 600;
+}
+
+.status-container,
+.status-left { align-self: stretch; }
+
+.status-bar a { color: inherit; text-decoration: none; }
+
+@media screen and (max-width: 900px) {
+    .back-link { padding: 0.15rem 0.6rem; }
+}
+
+@media screen and (max-width: 1280px){
+    .editor {
+        width: calc(100vw - 250px);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .back-link span { display: none; }
+    .search-box span { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .tab { padding: 0.65rem 1rem 0.65rem 0.7rem; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    .section, .badge, .skill-card, .back-link { transition: none; }
 }

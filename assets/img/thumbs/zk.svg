@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" role="img" aria-label="Abstract zero-knowledge proof: a locked box produces a verified check mark">
+<rect width="640" height="400" fill="#161616"/>
+<g fill="none" stroke="#F3EEE3" stroke-opacity=".7" stroke-width="3" stroke-linejoin="round" stroke-linecap="round">
+<rect x="70" y="140" width="130" height="120" rx="10"/><path d="M110 140v-30a25 25 0 0 1 50 0v30"/>
+<rect x="440" y="140" width="130" height="120" rx="10" stroke="#D9541E" stroke-opacity="1"/>
+</g>
+<circle cx="135" cy="200" r="10" fill="#F3EEE3" fill-opacity=".7"/>
+<path d="M480 200l24 24 46-50" fill="none" stroke="#D9541E" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+<g fill="none" stroke="#F3EEE3" stroke-opacity=".5" stroke-width="2" stroke-dasharray="6 8"><path d="M200 200H440"/></g>
+<rect x="260" y="178" width="120" height="44" rx="22" fill="#D9541E"/>
+<text x="320" y="207" text-anchor="middle" font-family="Inter Tight, Arial, sans-serif" font-size="18" font-weight="700" fill="#111">proof</text>
+<g fill="#F3EEE3" fill-opacity=".25"><rect x="70" y="300" width="200" height="8" rx="2"/><rect x="70" y="320" width="130" height="8" rx="2"/><rect x="370" y="300" width="200" height="8" rx="2"/></g>
+</svg>

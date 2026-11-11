@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" role="img" aria-label="Abstract web search results being filled into a supplier record">
+<rect width="640" height="400" fill="#161616"/>
+<g fill="#F3EEE3" fill-opacity=".14"><rect x="50" y="60" width="240" height="40" rx="20"/><rect x="50" y="120" width="240" height="26" rx="4"/><rect x="50" y="160" width="240" height="26" rx="4"/><rect x="50" y="200" width="240" height="26" rx="4"/></g>
+<circle cx="78" cy="80" r="9" fill="none" stroke="#F3EEE3" stroke-opacity=".7" stroke-width="3"/><path d="M85 87l9 9" stroke="#F3EEE3" stroke-opacity=".7" stroke-width="3" stroke-linecap="round"/>
+<g fill="#F3EEE3" fill-opacity=".5"><rect x="64" y="130" width="150" height="8" rx="2"/><rect x="64" y="170" width="190" height="8" rx="2"/><rect x="64" y="210" width="120" height="8" rx="2"/></g>
+<path d="M300 170H350" stroke="#D9541E" stroke-width="3" stroke-dasharray="6 6"/><path d="M350 170l-9-6v12z" fill="#D9541E"/>
+<rect x="370" y="60" width="220" height="280" rx="10" fill="#1F1F1F" stroke="#F3EEE3" stroke-opacity=".25" stroke-width="2"/>
+<g fill="#F3EEE3" fill-opacity=".5"><rect x="392" y="92" width="100" height="10" rx="2"/><rect x="392" y="140" width="60" height="7" rx="2"/><rect x="392" y="190" width="60" height="7" rx="2"/><rect x="392" y="240" width="60" height="7" rx="2"/></g>
+<g fill="#F3EEE3" fill-opacity=".25"><rect x="392" y="154" width="170" height="10" rx="2"/><rect x="392" y="204" width="130" height="10" rx="2"/></g>
+<rect x="392" y="254" width="150" height="10" rx="2" fill="#D9541E"/>
+<rect x="392" y="292" width="90" height="26" rx="13" fill="#D9541E"/>
+</svg>

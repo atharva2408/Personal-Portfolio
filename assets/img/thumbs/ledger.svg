@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" role="img" aria-label="Abstract terminal window with ledger rows">
+<rect width="640" height="400" fill="#161616"/>
+<rect x="60" y="40" width="520" height="320" rx="10" fill="#1F1F1F" stroke="#F3EEE3" stroke-opacity=".25" stroke-width="2"/>
+<g fill="#F3EEE3" fill-opacity=".3"><circle cx="86" cy="66" r="6"/><circle cx="108" cy="66" r="6"/><circle cx="130" cy="66" r="6"/></g>
+<g fill="#F3EEE3" fill-opacity=".5">
+<rect x="90" y="110" width="150" height="9" rx="2"/><rect x="90" y="146" width="110" height="9" rx="2"/>
+<rect x="90" y="182" width="180" height="9" rx="2"/><rect x="90" y="254" width="130" height="9" rx="2"/>
+</g>
+<rect x="90" y="214" width="150" height="9" rx="2" fill="#D9541E"/>
+<g fill="#F3EEE3" fill-opacity=".22">
+<rect x="430" y="110" width="120" height="9" rx="2"/><rect x="460" y="146" width="90" height="9" rx="2"/>
+<rect x="410" y="182" width="140" height="9" rx="2"/><rect x="450" y="254" width="100" height="9" rx="2"/>
+</g>
+<rect x="400" y="214" width="150" height="9" rx="2" fill="#D9541E"/>
+<rect x="90" y="304" width="14" height="22" fill="#D9541E"/>
+</svg>
